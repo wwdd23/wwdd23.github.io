@@ -9,7 +9,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : WuDi Technology And Life Blog
-tagline: Site Tagline
+tagline: Text 
 author :
   name :  吴迪
   email : dancerwudi@gmail.com

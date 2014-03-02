@@ -1,7 +1,7 @@
 ---
 layout: page
 title: First Blog!
-tagline: Supporting tagline
+tagline: 
 ---
 {% include JB/setup %}
 #另apple store下载速率加快的秘籍V2EX DNS 
@@ -10,6 +10,7 @@ google ：
 
 V2EX DNS
 
+[http://dns.v2ex.com/](http://dns.v2ex.com/)
 
 打开网站将网站中所示
 
