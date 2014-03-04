@@ -5,6 +5,12 @@ title: "另apple store下载速率加快的秘籍V2EX DNS"
 description: ""
 tagline: "How to faster"
 tags : [技术, 分享, OS]
+image:
+  feature: so-simple-sample-image-2.jpg
+  credit: Michael Rose
+  creditlink: http://mademistakes.com
+comments: true
+share: true
 ---
 {% include JB/setup %}
 
