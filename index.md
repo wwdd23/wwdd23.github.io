@@ -1,6 +1,6 @@
 ---
 layout: index
-title: index
+title: 主页
 tagline: 
 ---
 {% include JB/setup %}
