@@ -4,13 +4,200 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2014-03-05T10:07:58-05:00</updated>
+<updated>2014-03-05T12:51:37-05:00</updated>
 <id>/</id>
 <author>
   <name>吴迪</name>
   <uri>/</uri>
   <email>dancerwudi@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[About]]></title>
+  <link rel="alternate" type="text/html" href="/about/"/>
+  <id>/about</id>
+  <published>2014-03-06T00:00:00-05:00</published>
+  <updated>2014-03-06T00:00:00-05:00</updated>
+  <author>
+    <name>吴迪</name>
+    <uri></uri>
+    <email>dancerwudi@gmail.com</email>
+  </author>
+  <content type="html">&lt;h2 id=&quot;section&quot;&gt;&lt;em&gt;吴迪&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;男 &lt;/p&gt;
+
+&lt;p&gt;共青团员&lt;/p&gt;
+
+&lt;p&gt;wwdd.23@163.com&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;户籍：&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;籍贯：&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;现居地址：&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;河北省张家口市&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;北京市&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;北京市朝阳区八里庄东里&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;（+86）15811420654&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;IT技能&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;技能证书&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Linux系统开发者。&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;精通linux系统结构,构建与集成。&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;英语四级&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;熟悉C，Shell。&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;CAD设计技能证书。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;红旗linux,Qomo社区产品开发项目。&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;计算机相关证书等。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;有裁剪定制linux kernel经验。&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;熟练使用git cvs等版本控制工具。&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Object-c , Android&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;工作经历：北京中科红旗软件技术有限公司&lt;/p&gt;
+
+&lt;p&gt;桌面研发部 桌面系统研发工程师       2011/10-至今	&lt;/p&gt;
+
+&lt;p&gt;进行linux桌面系统的定制与开发。在政府项目中担任一定的技术支持职能，沟通并解决客户提出的疑问。编写相关说明，以及提供售后部门相关的技术支持解决办法。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;解决OEM厂商机型与linux系统的硬件兼容性问题。&lt;/li&gt;
+  &lt;li&gt;提供新平台机型在linux中某些功能无法正常使用的解决方案。&lt;/li&gt;
+  &lt;li&gt;与其他硬件支持厂商交流，获取其他解决方案。- 解决OEM定制过程中，产生的测试需求。&lt;/li&gt;
+  &lt;li&gt;管控OEM项目流程，确保产品质量。&lt;/li&gt;
+  &lt;li&gt;协调部门相关人员解决系统相关BUG，以满足OEM客户需求。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;主要项目：某全球知名的综合性跨国企业集团【日企】——PC产品线OEM定制项目&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12Q—14Q1：3年7个季度项目。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;最终产品包含中文语言版本，多国语言版本。&lt;/h2&gt;
+&lt;p&gt;###具体负责职能：
++ 1，与客户公司项目接口人，技术接口人，硬件技术接口人，交流并解决定制linux系统版本所需要完成的内容，以及相关需求的技术难度。
++ 2,解决linux系统相关异常兼容性问题。
++ 3，查阅相关kde源码，解决部分由于kde功能性缺失引起的bug。未提交kde组织
++ 4，修改编译相关linux相关源码包，rpm格式。
++ 5，编写部分脚本工具，实现操作系统上层的快捷键调用。
++ 6，负责由客户所提需求添加的小型工具的编写与修改。
++ 7，完成项目时间的定制，控制最终产品的deadline.
++ 8，解决linux操作系统与当季项目中产生的相关硬件兼容性。以及添加，编译OEM厂商提供的相关定制内容。
++ 9，管理Bugzilla,管控项目中bug的风险等级，并及时修复相关BUG.处理BUG相关状态。
++ 10，负责与客户展开电话会议，通报并交流项目进行中的问题。控制项目问题的风险程度。
++ 11，更新linux操作系统中的相关工具。
++ 12，保持关注kernel的状态，以及相关更新，提取相关patch解决由kernel引起的重要性问题。
++ 13，负责编写相关技术说明文档，包括部分英文说明文档。
++ 14，记录相关会议内容，向主管部门以及领导介绍说明客户新增需求，讨论解决方案。
++ 10，负责管理相关ftp服务器的同步与传输。
++ 11，协调处理用户手册，使用说明的编写，检查最终文档质量。		&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;##&lt;strong&gt;&lt;em&gt;项目经验：&lt;/em&gt;&lt;/strong&gt;
+2011年10月- 2012年6月：		&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; 国家级核高基项目:			
+
+    负责KDE，i18n国际化相关内容。			
+    负责编译维护，系统编译环境，维护做盘环境。			
+    负责项目后期维护，修改kde相关代码。			
+    外网仓库的维护。
+    2011年12月-2012年5月		
+    OEM项目 12Q2			
+    负责解决，部部分外围设备的硬件兼容性问题。 			
+    添加客户提出的定制性内容。 --- 2012年5月-2012年9月		
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OEM项目 12Q3			&lt;/p&gt;
+
+&lt;p&gt;参与项目初期的的需求分析，指定此季度项目的工作内容。			
+控制客户需求中，影响研发进度的内容、组织电话会议，通报项目进展，以及相关问题。			
+解决新平台中linux相关硬件兼容性问题。
+	例如：				
+	硬件acpi事件处理。				
+	显卡驱动相关问题。				
+	处理由kernel引起的系统问题，添加patch或参数解决系统问题。
+—
+2012年5月-2012年6月		&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;政府地市正版化项目：			
+
+    负责辅助销售，技术支持部门，到一线解决技术问题。		
+    培训地市政府机关相关人员使用linux操作系统。		
+    编写说明文档，解决红旗DT6版本安装，系统调试内容。 --- 2012年4月-2012年7月		
+核高基项目验收：			
+    核高基桌面项目的后期维护。协助验收单位，编写处理文档。			
+    修改kde Nepomuk源码，完成项目中需求。			
+    修改kde-plasma-network相关源码，解决相关网络连接问题。 --- 2012年6月-7月		
+政府地市正版化项目收尾：			
+    负责编写技术文档，为技术支持部门提供相关技术文档。			
+    搭建并维护外网linux yum源。 --- 2012年8月-2012年12月		
+OEM 13Q1 中文版项目			13Q1 英文版项目		
+
+参与项目启动会议，与对应国家的视频会议，收集中文版/英文版客户需求。		
+作为项目的技术接口人，整理并解决我方，与客户ODM部门提出的相关BUG。		
+解决由系统架构改变后，项目由旧的体系向新架构体系迁移的工程。		
+13Q1 添加英文项目，定制相关英文版相关服务。修改系统文件，为桌面系统添加相关定制信息内容。		
+负责解决客户技术相关部门，在测试中遇到的问题，解决工具的编译问题，解决系统中依赖缺失导致的部分功能不能正常使用的状况。		
+负责编写修订中英文版用户手册。更新红旗linux公版信息。 --- 2012年12月-2013年4月		
+OEM	13Q2 项目		
+作为技术接口，解决由于PC硬件跟新而引入的不兼容问题。		
+例如：			
+    	声卡相关。			
+    	显卡相关。		
+    	解决方式，用户进行操作时，添加shell脚本来控制按键的最终结果。或者查阅文档，添加系统参数，重新编译相关rpm包进行系统集成。		
+    	负责组织与客户间的电话会议，审阅当前Bug状态，以及判定bug等级。		
+    	通报交流下一季度项目中的技术信息，提供相关技术文档以及说明。		
+    	负责培训客户Driver Center部门了解以及使用OEM定制版本的linux操作系统。		
+    	提供说明文档。
+    	2013年5月- 2013年9月		OEM	13Q3项目		
+    	解决由于CPU平台更新后，导致的系统异常问题。		
+    	追踪kernel相关patch,提取相关patch解决系统底层问题。		
+    	处理项目进行中，客户QA，ODM部门由于技术能力不足导致的编译异常等问题。		
+    	解决系统更新后HDMI，声卡不能正常使用的问题。		
+    	提供相关处理的中英文说明。	 --- 2013年10月-2014年1月		
+OEM 	14Q1项目 ---
+自我评价：
+
+对于工作有很高的积极性，对新工具有较强的好奇心与学习的动力。能够承受很强的工作压力，保持较好的工作状态。性格开朗，乐观且积极向上。有较长工作时间，高负荷压力下工作经验，善于调节工作压力与身体精神的状态。对于项目的实施有较强的执行力，善于与他人沟通，有较强的团队合作精神。善于独立分析，解决问题。个人规划中，希望向产品以及互联网方面转型。
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/about/&quot;&gt;About&lt;/a&gt; was originally published by 吴迪 at &lt;a href=&quot;&quot;&gt;Site Title&lt;/a&gt; on March 06, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
