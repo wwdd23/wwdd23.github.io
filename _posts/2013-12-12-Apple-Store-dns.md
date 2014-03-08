@@ -7,8 +7,6 @@ tagline: "How to faster"
 tags : [技术, 分享, OS]
 image:
   feature: so-simple-sample-image-2.jpg
-  credit: Michael Rose
-  creditlink: http://mademistakes.com
 comments: true
 share: true
 ---

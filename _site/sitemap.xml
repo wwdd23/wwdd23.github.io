@@ -52,6 +52,10 @@
 
     
     <url>
+        <loc>/day/</loc>
+    </url>
+    
+    <url>
         <loc>/about/</loc>
     </url>
     
