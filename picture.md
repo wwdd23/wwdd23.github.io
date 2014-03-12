@@ -19,5 +19,3 @@ so-simple-sample-image-5
 ![](/images/so-simple-sample-image-5.jpg)
 simple-search-screenshot
 ![](/images/simple-search-screenshot.jpg)
-michael-rose-sketch.jpg
-![](/images/michael-rose-sketch.jpg)
