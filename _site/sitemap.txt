@@ -6,6 +6,7 @@
 /feed.xml
 /index.html
 /pages.html
+/Picture/
 /rss.xml
 /sitemap.txt
 /sitemap.xml

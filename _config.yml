@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website here.
+title:            About Me About U
+description:      个人笔记 技术分享.
 logo:             site-logo.png
 disqus_shortname: 
 search:           true
@@ -37,14 +37,16 @@ links:
     url: /about/
   - title: Articles
     url: /articles/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
+  - title: Picture
+    url: /Picture/
+#  - title: Theme Setup
+#    url: /theme-setup/
+#  - title: Made Mistakes
+#    url: http://mademistakes.com
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Beijing
 future:      true
 pygments:    true
 markdown:    kramdown
