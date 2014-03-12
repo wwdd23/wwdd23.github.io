@@ -5,25 +5,25 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>git clone 设置代理方式 &#8211; Site Title</title>
-<meta name="description" content="">
-<meta name="keywords" content="技术, 分享, git">
+<title>使用find查找4分钟前修改后的文件 &#8211; Site Title</title>
+<meta name="description" content="如何高大上(装)">
+<meta name="keywords" content="技术, 分享, Linux, find, 技巧">
 
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git clone 设置代理方式">
-<meta property="og:description" content="">
-<meta property="og:url" content="/%E5%88%86%E4%BA%AB%E5%86%85%E5%AE%B9/git-proxy/">
+<meta property="og:title" content="使用find查找4分钟前修改后的文件">
+<meta property="og:description" content="如何高大上(装)">
+<meta property="og:url" content="/find%20%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/use-find-command/">
 <meta property="og:site_name" content="Site Title">
 
 
 
 
 
-<link rel="canonical" href="/%E5%88%86%E4%BA%AB%E5%86%85%E5%AE%B9/git-proxy/">
+<link rel="canonical" href="/find%20%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/use-find-command/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Site Title Feed">
 <link rel="author" href="https://plus.google.com/100949260652862828149/posts?rel=author">
 
@@ -120,69 +120,40 @@
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="/tags/#技术" title="Pages tagged 技术">技术</a>&nbsp;&bull;&nbsp;<a href="/tags/#分享" title="Pages tagged 分享">分享</a>&nbsp;&bull;&nbsp;<a href="/tags/#git" title="Pages tagged git">git</a></span>
+        <span class="entry-tags"><a href="/tags/#技术" title="Pages tagged 技术">技术</a>&nbsp;&bull;&nbsp;<a href="/tags/#分享" title="Pages tagged 分享">分享</a>&nbsp;&bull;&nbsp;<a href="/tags/#Linux" title="Pages tagged Linux">Linux</a>&nbsp;&bull;&nbsp;<a href="/tags/#find" title="Pages tagged find">find</a>&nbsp;&bull;&nbsp;<a href="/tags/#技巧" title="Pages tagged 技巧">技巧</a></span>
         
-          <h1 class="entry-title">git clone 设置代理方式</h1>
+          <h1 class="entry-title">使用find查找4分钟前修改后的文件</h1>
         
       </header>
       <footer class="entry-meta">
         <img src="/images/wudi-blog-photo.jpg" alt="吴迪 photo" class="author-photo">
         <span class="author vcard">By <span class="fn"><a href="/about/" title="About 吴迪">吴迪</a></span></span>
-        <span class="entry-date date published"><time datetime="2014-03-08T00:00:00-05:00"><i class="icon-calendar-empty"></i> March 08, 2014</time></span>
+        <span class="entry-date date published"><time datetime="2014-03-11T00:00:00-04:00"><i class="icon-calendar-empty"></i> March 11, 2014</time></span>
        <!-- 
         
         -->
        <span class="entry-date date modified"><time datetime=""><i class="icon-pencil"></i> </time></span>
         <span class="entry-comments"><i class="icon-comment-alt"></i> <a href="#disqus_thread">Comment</a></span>
 
-        <span><a href="/%E5%88%86%E4%BA%AB%E5%86%85%E5%AE%B9/git-proxy/" rel="bookmark" title="git clone 设置代理方式"><i class="icon-link"></i> Permalink</a></span>
+        <span><a href="/find%20%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/use-find-command/" rel="bookmark" title="使用find查找4分钟前修改后的文件"><i class="icon-link"></i> Permalink</a></span>
         
       </footer>
       <div class="entry-content">
-        
-<h3 id="git-git-clone">GIT 如何设置代理提速git clone</h3>
+        <h2 id="how-to-use-find">How to use find</h2>
+<p>####find the file whitch modify 1 MIN before</p>
 
-<p>大陆由于被GFW，git 登陆与clone会受到影响，所以添加gogant后，可设置代理。</p>
-
-<p>参加使用 个人配置：</p>
-
-<p>设置代理 </p>
-
-<p>git config –global http.proxy http://proxyuser:proxypwd@proxy.server.com:port  </p>
-
-<p><strong><em>我个人的配置方法</em></strong>： “git config –global –add http.proxy 127.0.0.1:8087”</p>
-
-<p>删除代理 </p>
-
-<p>git config –system (or –global or –local) –unset http.proxy  </p>
-
-<p><strong><em>个人配置</em></strong>：”git config –global –unset http.proxy”</p>
-
-<p>关闭SSL验证 </p>
-
-<p>git config –global http.sslVerify false  </p>
-
-<p>下载代码 </p>
-
-<p>git clone http://server.com/source.git  </p>
-
-<p>提交本地branch至remote </p>
-
-<p>git push <remote-name> <local-branch-name>:<remote-branch-name>  </remote-branch-name></local-branch-name></remote-name></p>
-
-<p>删除本地分支 </p>
-
-<p>git branch -d the_local_branch  </p>
+<p>find (file) -mmin 4
+find ./ -mmin 4</p>
 
         
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="/day/" class="btn" title="妇女节">Previous article</a>
+        <a href="/%E5%88%86%E4%BA%AB%E5%86%85%E5%AE%B9/git-proxy/" class="btn" title="git clone 设置代理方式">Previous article</a>
       
       
-        <a href="/find%20%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/use-find-command/" class="btn" title="使用find查找4分钟前修改后的文件">Next article</a>
+        <a href="/vim%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/vim_%E4%BB%A3%E7%A0%81%E6%8A%98%E5%8F%A0/" class="btn" title="Vim 代码折叠">Next article</a>
       
     </nav><!-- /.pagination -->
   </article>
