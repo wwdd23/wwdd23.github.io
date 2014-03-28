@@ -5,25 +5,25 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Vim 代码折叠 &#8211; About Me About U</title>
-<meta name="description" content="vim">
-<meta name="keywords" content="技术, 分享, vim">
+<title>linux解决win zip解压后文件名乱码问题 &#8211; About Me About U</title>
+<meta name="description" content="">
+<meta name="keywords" content="技术, 分享, OS, 高大上">
 
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vim 代码折叠">
-<meta property="og:description" content="vim">
-<meta property="og:url" content="/vim%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/vim_%E4%BB%A3%E7%A0%81%E6%8A%98%E5%8F%A0/">
+<meta property="og:title" content="linux解决win zip解压后文件名乱码问题">
+<meta property="og:description" content="">
+<meta property="og:url" content="/%E6%8A%80%E6%9C%AF%E5%B0%B1%E6%98%AF%E7%94%9F%E4%BA%A7%E5%8A%9B/linux-zip-luanma/">
 <meta property="og:site_name" content="About Me About U">
 
 
 
 
 
-<link rel="canonical" href="/vim%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/vim_%E4%BB%A3%E7%A0%81%E6%8A%98%E5%8F%A0/">
+<link rel="canonical" href="/%E6%8A%80%E6%9C%AF%E5%B0%B1%E6%98%AF%E7%94%9F%E4%BA%A7%E5%8A%9B/linux-zip-luanma/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="About Me About U Feed">
 <link rel="author" href="https://plus.google.com/100949260652862828149/posts?rel=author">
 
@@ -114,101 +114,49 @@
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="/tags/#技术" title="Pages tagged 技术">技术</a>&nbsp;&bull;&nbsp;<a href="/tags/#分享" title="Pages tagged 分享">分享</a>&nbsp;&bull;&nbsp;<a href="/tags/#vim" title="Pages tagged vim">vim</a></span>
+        <span class="entry-tags"><a href="/tags/#技术" title="Pages tagged 技术">技术</a>&nbsp;&bull;&nbsp;<a href="/tags/#分享" title="Pages tagged 分享">分享</a>&nbsp;&bull;&nbsp;<a href="/tags/#OS" title="Pages tagged OS">OS</a>&nbsp;&bull;&nbsp;<a href="/tags/#高大上" title="Pages tagged 高大上">高大上</a></span>
         
-          <h1 class="entry-title">Vim 代码折叠</h1>
+          <h1 class="entry-title">linux解决win zip解压后文件名乱码问题</h1>
         
       </header>
       <footer class="entry-meta">
         <img src="/images/wudi-blog-photo.jpg" alt="吴迪 photo" class="author-photo">
         <span class="author vcard">By <span class="fn"><a href="/about/" title="About 吴迪">吴迪</a></span></span>
-        <span class="entry-date date published"><time datetime="2014-03-12T00:00:00+00:00"><i class="icon-calendar-empty"></i> March 12, 2014</time></span>
+        <span class="entry-date date published"><time datetime="2014-03-20T00:00:00+00:00"><i class="icon-calendar-empty"></i> March 20, 2014</time></span>
        <!-- 
         
         -->
        <span class="entry-date date modified"><time datetime=""><i class="icon-pencil"></i> </time></span>
         <span class="entry-comments"><i class="icon-comment-alt"></i> <a href="#disqus_thread">Comment</a></span>
 
-        <span><a href="/vim%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/vim_%E4%BB%A3%E7%A0%81%E6%8A%98%E5%8F%A0/" rel="bookmark" title="Vim 代码折叠"><i class="icon-link"></i> Permalink</a></span>
+        <span><a href="/%E6%8A%80%E6%9C%AF%E5%B0%B1%E6%98%AF%E7%94%9F%E4%BA%A7%E5%8A%9B/linux-zip-luanma/" rel="bookmark" title="linux解决win zip解压后文件名乱码问题"><i class="icon-link"></i> Permalink</a></span>
         
       </footer>
       <div class="entry-content">
-        <h1 id="vim-">VIM 代码折叠</h1>
-<p>VIM代码折叠方式可以用”foldmethod”选项来设置，如: set foldmethod=indent</p>
+        <h3 id="linuxwin-zip">linux解决win zip解压后文件名乱码问题。</h3>
 
-<p>有6种方式来折叠代码</p>
+<p>rfbrowse 只能在当前用户修改</p>
 
-<ol>
-  <li>manual //手工定义折叠</li>
-  <li>indent //用缩进表示折叠</li>
-  <li>expr　 //用表达式来定义折叠</li>
-  <li>syntax //用语法高亮来定义折叠</li>
-  <li>diff   //对没有更改的文本进行折叠</li>
-  <li>marker //用标志折叠</li>
-</ol>
+<p>需要在root 中的konsole中desktop添加默认网址。</p>
 
-<p>vim 配置文件分为全局配置文件和用户配置文件</p>
+<p>但是无法在界面中添加ssl 证书等功能。</p>
 
-<ol>
-  <li>全局配置文件查找，在.vim 中输入:echo $VIM,一般为：/usr/share/vim/vimrc</li>
-  <li>用户配置文件在用户主目录下，如：/home/abeen/.vimrc</li>
-</ol>
+<hr />
+<p>解决win下拷贝过来后 zip解压为乱码问题
+—
+LANG=C 7z x xx.zip</p>
 
-<p>在vimrc文件中设置折叠方式：如set foldmethod=indent</p>
-
-<p>选定折叠方式后，就可以使用折叠命令进行折叠操作了．常用的折叠方式为indent和marker．</p>
-
-<p>indent折叠命令</p>
-
-<p>indent方式，vim会自动利用缩进进行折叠，我们可以使用现成的折叠成果．</p>
-
-<p>我们可以在折叠处输入以下命令：</p>
-
-<p>zc 折叠</p>
-
-<p>zC 对所在范围内所有嵌套的折叠点进行折叠</p>
-
-<p>zo 展开折叠</p>
-
-<p>zO 对所在范围内所有嵌套的折叠点展开</p>
-
-<p>[z 到当前打开的折叠的开始处。</p>
-
-<p>]z 到当前打开的折叠的末尾处。</p>
-
-<p>zj 向下移动。到达下一个折叠的开始处。关闭的折叠也被计入。</p>
-
-<p>zk 向上移动到前一折叠的结束处。关闭的折叠也被计入。</p>
-
-<p>marker折叠命令</p>
-
-<p>marker折叠方式时，我们需要用标计来标识代码的折叠，系统默认是}</p>
-
-<p>折叠命令</p>
-
-<p>zf　创建折叠，比如在marker方式下：</p>
-
-<pre><code>    zf56G，创建从当前行起到56行的代码折叠；
-    10zf或10zf+或zf10↓，创建从当前行起到后10行的代码折叠。
-    10zf-或zf10↑，创建从当前行起到之前10行的代码折叠。
-    在括号处zf%，创建从当前行起到对应的匹配的括号上去（（），{}，[]，&lt;&gt;等）。
-</code></pre>
-
-<p>zd  删除 (delete) 在光标下的折叠。仅当 ‘foldmethod’ 设为 “manual” 或 “marker” 时有效。</p>
-
-<p>zD  循环删除 (Delete) 光标下的折叠，即嵌套删除折叠。仅当 ‘foldmethod’ 设为 “manual” 或 “marker” 时有效。</p>
-
-<p>zE  除去 (Eliminate) 窗口里“所有”的折叠。仅当 ‘foldmethod’ 设为 “manual” 或 “marker” 时有效。</p>
+<p>convmv -f cp936 -t utf-8 –notest -r filename</p>
 
         
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="/find%20%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/use-find-command/" class="btn" title="使用find查找4分钟前修改后的文件">Previous article</a>
+        <a href="/vim%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/vim_%E4%BB%A3%E7%A0%81%E6%8A%98%E5%8F%A0/" class="btn" title="Vim 代码折叠">Previous article</a>
       
       
-        <a href="/%E6%8A%80%E6%9C%AF%E5%B0%B1%E6%98%AF%E7%94%9F%E4%BA%A7%E5%8A%9B/linux-zip-luanma/" class="btn" title="linux解决win zip解压后文件名乱码问题">Next article</a>
+        <a href="/post-record/" class="btn" title="2014-3-26 记录">Next article</a>
       
     </nav><!-- /.pagination -->
   </article>
