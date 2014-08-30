@@ -5,10 +5,141 @@
         <description>About Me About U - </description>
         <link></link>
         <link></link>
-        <lastBuildDate>2014-04-07T08:28:06+00:00</lastBuildDate>
-        <pubDate>2014-04-07T08:28:06+00:00</pubDate>
+        <lastBuildDate>2014-08-30T09:02:21+00:00</lastBuildDate>
+        <pubDate>2014-08-30T09:02:21+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>批量修改文件名总结</title>
+                <description>
+&lt;p&gt;批量删除文件名种的空格:
+1. find . -type f |sed ‘s// ////g’
+2. rename ‘s/ //g’ filename&lt;/p&gt;
+
+</description>
+                <link>/%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%8D%E7%9A%84%E7%A9%BA%E6%A0%BC%E4%BB%A5%E5%8F%8A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E5%90%8D/</link>
+                <guid>/批量删除文件名种的空格以及修改文件名</guid>
+                <pubDate>2014-08-30T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>使用脚本批量拷贝</title>
+                <description>
+&lt;p&gt;&lt;img src=&quot;/images/mdpic/3.57.19.png&quot; alt=&quot;pic1&quot; /&gt;
+&lt;img src=&quot;/images/mdpic/3.57.25.png&quot; alt=&quot;pic1&quot; /&gt;
+&lt;img src=&quot;/images/mdpic/3.57.53.png&quot; alt=&quot;pic1&quot; /&gt;
+&lt;img src=&quot;/images/mdpic/3.58.35.png&quot; alt=&quot;pic1&quot; /&gt;
+&lt;img src=&quot;/images/mdpic/3.59.22.png&quot; alt=&quot;pic1&quot; /&gt;
+&lt;img src=&quot;/images/mdpic/4.00.22.png&quot; alt=&quot;pic1&quot; /&gt;
+使用while read line 读取有\字符的文件执行文件拷贝&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls&lt;/td&gt;
+      &lt;td&gt;while read line;do&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;cp $line /tmp&lt;/p&gt;
+
+&lt;p&gt;done&lt;/p&gt;
+
+&lt;p&gt;此方法与for 循环的拷贝的区别是 for 循环不能读出标点后的转译符号。导致不能正常拷贝。&lt;/p&gt;
+
+&lt;p&gt;for i in &lt;code&gt;ls xxx&lt;/code&gt;;do&lt;/p&gt;
+
+&lt;p&gt;cp $i /tmp&lt;/p&gt;
+
+&lt;p&gt;done&lt;/p&gt;
+
+&lt;p&gt;如果文件名为[电影天堂www.dy2018.com]黑金杀机BD中英双字.rmvb&lt;/p&gt;
+
+&lt;p&gt;终端中会读取为\[电影天堂www.dy2018.com\]黑金杀机BD中英双字.rmvb&lt;/p&gt;
+
+&lt;p&gt;for 循环中会将此文件名在 第二个\后面做换行操作，导致文件名错误后不能正常复制&lt;/p&gt;
+</description>
+                <link>/%E4%BD%BF%E7%94%A8%E8%84%9A%E6%9C%AC%E6%89%B9%E9%87%8F%E6%8B%B7%E8%B4%9D/</link>
+                <guid>/使用脚本批量拷贝</guid>
+                <pubDate>2014-08-30T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>旅行————说走咱就走</title>
+                <description>
+</description>
+                <link>/travel-to-seaside/</link>
+                <guid>/travel-to-seaside</guid>
+                <pubDate>2014-06-25T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>isoft linux os 安装synergy 屏幕神器</title>
+                <description>
+&lt;h2 id=&quot;isoft-os-synergy-&quot;&gt;使用isoft os 安装synergy 多屏幕工作神器&lt;/h2&gt;
+
+&lt;p&gt;安装 yaout&lt;/p&gt;
+
+&lt;p&gt;$pacman -Ss yaout&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/puhu-synergy2.png&quot; alt=&quot;pic1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;使用yaourt 安装synergy&lt;/p&gt;
+
+&lt;p&gt;选择 community/synergy 的新选项 &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/puhu-synergy3.png&quot; alt=&quot;pic1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;选择Y 安装&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/puhu-synergy4.png&quot; alt=&quot;pic1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;安装后 开始菜单 工具  synergy 开始即可&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/puhu-synergy5.png&quot; alt=&quot;pic1&quot; /&gt;&lt;/p&gt;
+</description>
+                <link>/%E5%88%86%E4%BA%AB%E5%86%85%E5%AE%B9/%E6%99%AE%E5%8D%8E%E5%AE%89%E8%A3%85synergy%E8%AF%B4%E6%98%8E/</link>
+                <guid>/%E5%88%86%E4%BA%AB%E5%86%85%E5%AE%B9/普华安装synergy说明</guid>
+                <pubDate>2014-05-26T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>cmd U盘分区命令</title>
+                <description>
+&lt;p&gt;cmd U盘分区命令&lt;/p&gt;
+
+&lt;p&gt;cmd：&lt;/p&gt;
+
+&lt;p&gt;diskpart&lt;/p&gt;
+
+&lt;p&gt;list disk&lt;/p&gt;
+
+&lt;p&gt;sel disk 2&lt;/p&gt;
+
+&lt;p&gt;clean&lt;/p&gt;
+
+&lt;p&gt;create part pri&lt;/p&gt;
+
+&lt;p&gt;active&lt;/p&gt;
+
+&lt;p&gt;format quick fs=fat32&lt;/p&gt;
+
+&lt;p&gt;assign&lt;/p&gt;
+
+&lt;p&gt;exit&lt;/p&gt;
+
+&lt;p&gt;完事儿将iso里面的内容解压到U盘根目录即可引导&lt;/p&gt;
+
+&lt;p&gt;win7下的diskpart，设置U盘分区为激活分区后，可以直接引导U盘里的bootmgr文件，&lt;/p&gt;
+
+&lt;p&gt;你可以将grub4dos的grldr文件改名成bootmgr，配合menu.lst，有了grub剩下的都是浮云&lt;/p&gt;
+</description>
+                <link>/cmd-U%E7%9B%98%E5%88%B6%E4%BD%9C%E5%90%AF%E5%8A%A8%E7%9B%98/</link>
+                <guid>/cmd-U盘制作启动盘</guid>
+                <pubDate>2014-05-15T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>促进平台技术分析</title>
