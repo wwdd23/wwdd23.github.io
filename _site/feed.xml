@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2014-08-30T09:02:21+00:00</updated>
+<updated>2014-09-20T08:13:17+00:00</updated>
 <id>/</id>
 <author>
   <name>吴迪</name>
@@ -46,13 +46,9 @@
     <email>dancerwudi@gmail.com</email>
   </author>
   <content type="html">
-&lt;p&gt;&lt;img src=&quot;/images/mdpic/3.57.19.png&quot; alt=&quot;pic1&quot; /&gt;
-&lt;img src=&quot;/images/mdpic/3.57.25.png&quot; alt=&quot;pic1&quot; /&gt;
-&lt;img src=&quot;/images/mdpic/3.57.53.png&quot; alt=&quot;pic1&quot; /&gt;
-&lt;img src=&quot;/images/mdpic/3.58.35.png&quot; alt=&quot;pic1&quot; /&gt;
-&lt;img src=&quot;/images/mdpic/3.59.22.png&quot; alt=&quot;pic1&quot; /&gt;
-&lt;img src=&quot;/images/mdpic/4.00.22.png&quot; alt=&quot;pic1&quot; /&gt;
-使用while read line 读取有\字符的文件执行文件拷贝&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/mdpic/3.57.25.png&quot; alt=&quot;pic1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;使用while read line 读取有\字符的文件执行文件拷贝&lt;/p&gt;
 
 &lt;table&gt;
   &lt;tbody&gt;
@@ -67,7 +63,8 @@
 
 &lt;p&gt;done&lt;/p&gt;
 
-&lt;p&gt;此方法与for 循环的拷贝的区别是 for 循环不能读出标点后的转译符号。导致不能正常拷贝。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/mdpic/3.59.22.png&quot; alt=&quot;pic1&quot; /&gt;
+此方法与for 循环的拷贝的区别是 for 循环不能读出标点后的转译符号。导致不能正常拷贝。&lt;/p&gt;
 
 &lt;p&gt;for i in &lt;code&gt;ls xxx&lt;/code&gt;;do&lt;/p&gt;
 
@@ -75,11 +72,20 @@
 
 &lt;p&gt;done&lt;/p&gt;
 
-&lt;p&gt;如果文件名为[电影天堂www.dy2018.com]黑金杀机BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/mdpic/4.00.22.png&quot; alt=&quot;pic1&quot; /&gt;
+如果文件名为[电影天堂www.dy2018.com]黑金杀机BD中英双字.rmvb&lt;/p&gt;
 
 &lt;p&gt;终端中会读取为\[电影天堂www.dy2018.com\]黑金杀机BD中英双字.rmvb&lt;/p&gt;
 
 &lt;p&gt;for 循环中会将此文件名在 第二个\后面做换行操作，导致文件名错误后不能正常复制&lt;/p&gt;
+
+&lt;p&gt;试例：&lt;/p&gt;
+
+&lt;p&gt;for 循环书写方法以及现象:
+&lt;img src=&quot;/images/mdpic/3.57.53.png&quot; alt=&quot;pic1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;while 循环书写方法以及现象:
+&lt;img src=&quot;/images/mdpic/3.58.35.png&quot; alt=&quot;pic1&quot; /&gt;&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;/%E4%BD%BF%E7%94%A8%E8%84%9A%E6%9C%AC%E6%89%B9%E9%87%8F%E6%8B%B7%E8%B4%9D/&quot;&gt;使用脚本批量拷贝&lt;/a&gt; was originally published by 吴迪 at &lt;a href=&quot;&quot;&gt;About Me About U&lt;/a&gt; on August 30, 2014.&lt;/p&gt;</content>
 </entry>
