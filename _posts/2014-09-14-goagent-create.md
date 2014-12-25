@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Mac中goagent上传时问题小结"
+description: "技术分享"
+tags : [python2.7,goagent,Mac,技术，分享,小窍门]
+---
+{% include JB/setup %}
+
 在mac 中安装goagent上传，创建appid时会遇到几个问题。
 以下是相关的几个解决办法：
 
