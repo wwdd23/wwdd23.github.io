@@ -1,76 +1,46 @@
-title:            About Me About U
-description:      个人笔记 技术分享.
-logo:             site-logo.png
-disqus_shortname: 
-search:           true
-# Change url to your domain. Leave localhost server or blank when working locally.
-#url:              http://localhost:4000
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: redcarpet
 
-# Owner/author information
-owner:
-  name:           吴迪 
-  avatar:         wudi-blog-photo.jpg
-  email:          dancerwudi@gmail.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:        wwdd23 
-  stackexchange:  
-  linkedin:       
-  instagram:     wudi908 
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:   https://plus.google.com/100949260652862828149/posts 
+# 作者信息
+author: 
+  name: 吴迪
+  email: programmerwudi@gmail.com
+  google_plus:   https://plus.google.com/100949260652862828149/posts
   weibo:        小迪子
+  github: wwdd23
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+# 站点信息
+title: About Me About U
+description: 个人笔记 技术分享
+url: http://wwdd23.gitblog.io
+rss_url: /pages/atom.xml
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: About
-    url: /about/
-  - title: Articles
-    url: /articles/
-  - title: Picture
-    url: /Picture/
-#  - title: Theme Setup
-#    url: /theme-setup/
-#  - title: Made Mistakes
-#    url: http://mademistakes.com
-    external: true
+# gavatar头像及Favicon
+gavatar: /images/blog-log.jpg
+favicon: /public/img/deer3.png
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Beijing
-future:      true
-pygments:    true
-markdown:    kramdown
+# google analytics 设置
+# ???看看是什么
+ga:
+  id:  
+  url: 
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+# disqus 设置
+disqus:
+  shortname: painterlin
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
+# 主题设置，自动激活某个标签
+active: 读书
 
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+# 首页除了最新文章外显示分类
+cates: 
+  - Optimization
+  - LaTeX
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-
-#分页配置
-#paginate: 5
-#paginate_path: "page:num"
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
