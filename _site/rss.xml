@@ -5,10 +5,112 @@
         <description>About Me About U - </description>
         <link></link>
         <link></link>
-        <lastBuildDate>2014-09-20T08:13:17+00:00</lastBuildDate>
-        <pubDate>2014-09-20T08:13:17+00:00</pubDate>
+        <lastBuildDate>2014-12-25T14:11:18+00:00</lastBuildDate>
+        <pubDate>2014-12-25T14:11:18+00:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>写一篇有关Christmas的日记</title>
+                <description>
+&lt;h1 id=&quot;christmas&quot;&gt;写一篇有关Christmas的日记&lt;/h1&gt;
+
+&lt;p&gt;这天是几位朋友的生日心中默默祝福他们生日快乐~&lt;/p&gt;
+
+&lt;p&gt;这天原本依旧是骑车-上班-下班-骑车的生活~&lt;/p&gt;
+
+&lt;p&gt;这天在下班前收到小伙伴们临时组局的消息~&lt;/p&gt;
+
+&lt;p&gt;这天下班后朋友几人在原本就该朋友聚会的日子里分食了烤鸡~
+（交换品尝了面食）&lt;/p&gt;
+
+&lt;p&gt;这天晚饭后在Cows二层的阁楼中，舀食着冰淇淋，慢嘬着热可可~&lt;/p&gt;
+
+&lt;p&gt;话题不断的聊了几个小时，调侃，生活，趣闻，电影，音乐，台湾腔, 或许还有将来~&lt;/p&gt;
+
+&lt;p&gt;这天在聊天的几个小时里，几人坐卧在懒人沙发中，微醺了~&lt;/p&gt;
+
+&lt;p&gt;这天店家的热情一同温暖着寒风中骑行的rider们~&lt;/p&gt;
+
+&lt;p&gt;可以放车的拐角，文雅的店员~&lt;/p&gt;
+
+&lt;p&gt;Share抓拍我们搬车照片的老板~&lt;/p&gt;
+
+&lt;p&gt;这天我忘记了放在冰箱的午间便当~&lt;/p&gt;
+
+&lt;p&gt;当再次启程骑车奔回家中;&lt;/p&gt;
+
+&lt;p&gt;洗漱，整理，准备继续未完成的工作时;&lt;/p&gt;
+
+&lt;p&gt;随手开启一瓶可乐;&lt;/p&gt;
+
+&lt;p&gt;圣诞定制的Logo;&lt;/p&gt;
+
+&lt;p&gt;~在这几个瞬间，忽闪过的画面&lt;/p&gt;
+
+&lt;p&gt;~感觉到温馨的生活气息&lt;/p&gt;
+
+&lt;p&gt;~美好却又平常的一天&lt;/p&gt;
+
+&lt;p&gt;~已经踱步到25日&lt;/p&gt;
+
+&lt;p&gt;~Well it`s Christmas time&lt;/p&gt;
+
+&lt;p&gt;循环着 Kiss Me Babe,it`s Christmas time - OWL CITY&lt;/p&gt;
+
+&lt;p&gt;图片：
+&lt;img src=&quot;../images/christmas-2014-12-24-bike.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;../images/christmas-2014-12-24.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;../images/christmas-2014-12-24-2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;餐厅：Jazz·ya（爵士吧）&lt;/p&gt;
+
+&lt;p&gt;甜点：Cows梦工厂&lt;/p&gt;
+
+&lt;p&gt;文字上传:豆瓣/Gitpages Blog&lt;/p&gt;
+
+&lt;p&gt;如果能找到我Git Blog也可以看比较多东西。。&lt;/p&gt;
+</description>
+                <link>/Chrismas/</link>
+                <guid>/Chrismas</guid>
+                <pubDate>2014-12-24T00:00:00+00:00</pubDate>
+        </item>
+
+        <item>
+                <title>Mac中goagent上传时问题小结</title>
+                <description>
+&lt;p&gt;在mac 中安装goagent上传，创建appid时会遇到几个问题。
+以下是相关的几个解决办法：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mac 中输入命令的注意事项。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;python2.7 updater.zip 上传时需要使用，此状态是否需要root权限，我也有些迷茫了。但最好使用sudo su 进入root账号。&lt;/p&gt;
+
+&lt;p&gt;python2.7 proxy.py&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;首次创建appid，updater.zip上传时，出现无法上传的问题。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这个问题需要使用https://www.google.com/settings/security/lesssecureapps&lt;/p&gt;
+
+&lt;p&gt;将访问不够安全账户功能开启后即可上传。&lt;/p&gt;
+
+&lt;p&gt;上传时需要输入两次gmail账户。&lt;/p&gt;
+
+&lt;p&gt;部署到服务器报错AttributeError: can’t set attribute &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;error 403  添加环境变量&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+                <link>/goagent-create/</link>
+                <guid>/goagent-create</guid>
+                <pubDate>2014-09-14T00:00:00+00:00</pubDate>
+        </item>
 
         <item>
                 <title>批量修改文件名总结</title>

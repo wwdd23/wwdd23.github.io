@@ -4,13 +4,131 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2014-09-20T08:13:17+00:00</updated>
+<updated>2014-12-25T14:11:18+00:00</updated>
 <id>/</id>
 <author>
   <name>吴迪</name>
   <uri>/</uri>
   <email>dancerwudi@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[写一篇有关Christmas的日记]]></title>
+  <link rel="alternate" type="text/html" href="/Chrismas/"/>
+  <id>/Chrismas</id>
+  <published>2014-12-24T00:00:00+00:00</published>
+  <updated>2014-12-24T00:00:00+00:00</updated>
+  <author>
+    <name>吴迪</name>
+    <uri></uri>
+    <email>dancerwudi@gmail.com</email>
+  </author>
+  <content type="html">
+&lt;h1 id=&quot;christmas&quot;&gt;写一篇有关Christmas的日记&lt;/h1&gt;
+
+&lt;p&gt;这天是几位朋友的生日心中默默祝福他们生日快乐~&lt;/p&gt;
+
+&lt;p&gt;这天原本依旧是骑车-上班-下班-骑车的生活~&lt;/p&gt;
+
+&lt;p&gt;这天在下班前收到小伙伴们临时组局的消息~&lt;/p&gt;
+
+&lt;p&gt;这天下班后朋友几人在原本就该朋友聚会的日子里分食了烤鸡~
+（交换品尝了面食）&lt;/p&gt;
+
+&lt;p&gt;这天晚饭后在Cows二层的阁楼中，舀食着冰淇淋，慢嘬着热可可~&lt;/p&gt;
+
+&lt;p&gt;话题不断的聊了几个小时，调侃，生活，趣闻，电影，音乐，台湾腔, 或许还有将来~&lt;/p&gt;
+
+&lt;p&gt;这天在聊天的几个小时里，几人坐卧在懒人沙发中，微醺了~&lt;/p&gt;
+
+&lt;p&gt;这天店家的热情一同温暖着寒风中骑行的rider们~&lt;/p&gt;
+
+&lt;p&gt;可以放车的拐角，文雅的店员~&lt;/p&gt;
+
+&lt;p&gt;Share抓拍我们搬车照片的老板~&lt;/p&gt;
+
+&lt;p&gt;这天我忘记了放在冰箱的午间便当~&lt;/p&gt;
+
+&lt;p&gt;当再次启程骑车奔回家中;&lt;/p&gt;
+
+&lt;p&gt;洗漱，整理，准备继续未完成的工作时;&lt;/p&gt;
+
+&lt;p&gt;随手开启一瓶可乐;&lt;/p&gt;
+
+&lt;p&gt;圣诞定制的Logo;&lt;/p&gt;
+
+&lt;p&gt;~在这几个瞬间，忽闪过的画面&lt;/p&gt;
+
+&lt;p&gt;~感觉到温馨的生活气息&lt;/p&gt;
+
+&lt;p&gt;~美好却又平常的一天&lt;/p&gt;
+
+&lt;p&gt;~已经踱步到25日&lt;/p&gt;
+
+&lt;p&gt;~Well it`s Christmas time&lt;/p&gt;
+
+&lt;p&gt;循环着 Kiss Me Babe,it`s Christmas time - OWL CITY&lt;/p&gt;
+
+&lt;p&gt;图片：
+&lt;img src=&quot;../images/christmas-2014-12-24-bike.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;../images/christmas-2014-12-24.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;../images/christmas-2014-12-24-2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;餐厅：Jazz·ya（爵士吧）&lt;/p&gt;
+
+&lt;p&gt;甜点：Cows梦工厂&lt;/p&gt;
+
+&lt;p&gt;文字上传:豆瓣/Gitpages Blog&lt;/p&gt;
+
+&lt;p&gt;如果能找到我Git Blog也可以看比较多东西。。&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/Chrismas/&quot;&gt;写一篇有关Christmas的日记&lt;/a&gt; was originally published by 吴迪 at &lt;a href=&quot;&quot;&gt;About Me About U&lt;/a&gt; on December 24, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Mac中goagent上传时问题小结]]></title>
+  <link rel="alternate" type="text/html" href="/goagent-create/"/>
+  <id>/goagent-create</id>
+  <published>2014-09-14T00:00:00+00:00</published>
+  <updated>2014-09-14T00:00:00+00:00</updated>
+  <author>
+    <name>吴迪</name>
+    <uri></uri>
+    <email>dancerwudi@gmail.com</email>
+  </author>
+  <content type="html">
+&lt;p&gt;在mac 中安装goagent上传，创建appid时会遇到几个问题。
+以下是相关的几个解决办法：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mac 中输入命令的注意事项。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;python2.7 updater.zip 上传时需要使用，此状态是否需要root权限，我也有些迷茫了。但最好使用sudo su 进入root账号。&lt;/p&gt;
+
+&lt;p&gt;python2.7 proxy.py&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;首次创建appid，updater.zip上传时，出现无法上传的问题。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这个问题需要使用https://www.google.com/settings/security/lesssecureapps&lt;/p&gt;
+
+&lt;p&gt;将访问不够安全账户功能开启后即可上传。&lt;/p&gt;
+
+&lt;p&gt;上传时需要输入两次gmail账户。&lt;/p&gt;
+
+&lt;p&gt;部署到服务器报错AttributeError: can’t set attribute &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;error 403  添加环境变量&lt;/li&gt;
+&lt;/ol&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/goagent-create/&quot;&gt;Mac中goagent上传时问题小结&lt;/a&gt; was originally published by 吴迪 at &lt;a href=&quot;&quot;&gt;About Me About U&lt;/a&gt; on September 14, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -1025,38 +1143,6 @@ nmap -sP 192.168.0.1/24
 
 
   &lt;p&gt;&lt;a href=&quot;/%E6%8A%80%E6%9C%AF%E5%B0%B1%E6%98%AF%E7%94%9F%E4%BA%A7%E5%8A%9B/gaodashang/&quot;&gt;如何高大上(装)&lt;/a&gt; was originally published by 吴迪 at &lt;a href=&quot;&quot;&gt;About Me About U&lt;/a&gt; on January 13, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[另apple store下载速率加快的秘籍V2EX DNS]]></title>
-  <link rel="alternate" type="text/html" href="/%E5%88%86%E4%BA%AB%E5%86%85%E5%AE%B9/Apple-Store-dns/"/>
-  <id>/%E5%88%86%E4%BA%AB%E5%86%85%E5%AE%B9/Apple-Store-dns</id>
-  <published>2013-12-12T00:00:00+00:00</published>
-  <updated>2013-12-12T00:00:00+00:00</updated>
-  <author>
-    <name>吴迪</name>
-    <uri></uri>
-    <email>dancerwudi@gmail.com</email>
-  </author>
-  <content type="html">
-&lt;h2 id=&quot;apple-storev2ex-dns&quot;&gt;另apple store下载速率加快的秘籍V2EX DNS&lt;/h2&gt;
-
-&lt;p&gt;google ：&lt;/p&gt;
-
-&lt;p&gt;V2EX DNS&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dns.v2ex.com/&quot;&gt;http://dns.v2ex.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;打开网站将网站中所示&lt;/p&gt;
-
-&lt;p&gt;DNS 替换MAC ，iPhone，ipad and so on…设备中的DNS设置。&lt;/p&gt;
-
-&lt;p&gt;之后你会发现，从Apple Store下载的速度有可能变快了点。。。。。
-&lt;img src=&quot;/images/dns.png&quot; alt=&quot;alt text&quot; /&gt;&lt;/p&gt;
-
-
-  &lt;p&gt;&lt;a href=&quot;/%E5%88%86%E4%BA%AB%E5%86%85%E5%AE%B9/Apple-Store-dns/&quot;&gt;另apple store下载速率加快的秘籍V2EX DNS&lt;/a&gt; was originally published by 吴迪 at &lt;a href=&quot;&quot;&gt;About Me About U&lt;/a&gt; on December 12, 2013.&lt;/p&gt;</content>
 </entry>
 
 </feed>
