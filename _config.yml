@@ -6,9 +6,9 @@ markdown: redcarpet
 author: 
   name: 吴迪
   email: programmerwudi@gmail.com
-  google_plus:   https://plus.google.com/100949260652862828149/posts
-  weibo:        小迪子
-  github: wwdd23
+  google_plus: https://plus.google.com/100949260652862828149/posts
+  weibo: 
+  github: https://github.com/wwdd23
 
 # 站点信息
 title: About Me About U
@@ -28,7 +28,7 @@ ga:
 
 # disqus 设置
 disqus:
-  shortname: painterlin
+  shortname: wwdd23
 
 # 主题设置，自动激活某个标签
 active: 读书
