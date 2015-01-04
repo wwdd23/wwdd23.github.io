@@ -24,20 +24,18 @@
 &lt;li&gt;title: &amp;quot;Git Blog 添加日志流程&amp;quot;&lt;/li&gt;
 &lt;li&gt;description: &amp;quot;规范Blog中git流程&amp;quot;&lt;/li&gt;
 &lt;li&gt;tagline: &amp;quot;技术就是生产力&amp;quot;&lt;/li&gt;
-&lt;li&gt;tags : [技术,Linux,Blog ]&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;tags : [技术,Linux,Blog ]&lt;/p&gt;
+
+&lt;p&gt;category 选项 【技术,生活，简历，厨房，设备】&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;category 选项 【技术,生活，简历，厨房，设备】&lt;/p&gt;
-
 &lt;ol&gt;
-&lt;li&gt;文件编写完成后执行
-$jekyll server&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;&lt;p&gt;文件编写完成后执行&lt;/p&gt;
 
-&lt;p&gt;验证版面内容&lt;/p&gt;
+&lt;p&gt;$jekyll server&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;推送分支到远程&lt;/li&gt;
+&lt;p&gt;验证版面内容&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;推送分支到远程&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;hr&gt;
