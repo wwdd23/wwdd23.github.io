@@ -862,28 +862,26 @@
 <li><p>git co -b [new-branch] （用于添加修改）</p></li>
 <li><p>进入_post目录编写内容</p></li>
 <li><p>md文件头内容,category对应博客标签页内容</p></li>
+<li><p>文件编写完成后执行</p></li>
 </ol>
 
 <ul>
-<li>layout: post</li>
-<li>category : 技术</li>
-<li>title: &quot;Git Blog 添加日志流程&quot;</li>
-<li>description: &quot;规范Blog中git流程&quot;</li>
-<li>tagline: &quot;技术就是生产力&quot;</li>
-<li><p>tags : [技术,Linux,Blog ]</p>
-
-<p>category 选项 【技术,生活，简历，厨房，设备】</p></li>
+<li>$jekyll server</li>
+<li>验证版面内容</li>
 </ul>
 
 <ol>
-<li><p>文件编写完成后执行</p>
-
-<p>$jekyll server</p>
-
-<p>验证版面内容</p></li>
-<li><p>推送分支到远程</p></li>
+<li>推送分支到远程</li>
 </ol>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">- layout: post
+- category : 技术
+- title: &quot;Git Blog 添加日志流程&quot;
+- description: &quot;规范Blog中git流程&quot;
+- tagline: &quot;技术就是生产力&quot;
+- tags : [技术,Linux,Blog ]
 
+category 选项 【技术,生活，简历，厨房，设备】
+</code></pre></div>
 <hr>
 
 <p>$git add .</p>
