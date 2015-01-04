@@ -6,6 +6,77 @@
     <description>个人笔记 技术分享</description>
     
       <item>
+        <title>Git Blog 添加日志流程</title>
+        <link>http://wwdd23.gitblog.io/2015/01/04/blog%E6%97%A5%E5%BF%97%E6%8E%A8%E9%80%81%E6%B5%81%E7%A8%8B.html</link>
+        <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/04/blog%E6%97%A5%E5%BF%97%E6%8E%A8%E9%80%81%E6%B5%81%E7%A8%8B.html</guid>
+        <pubDate>Sun, 04 Jan 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h2&gt;Git Blog 添加日志流程规范&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;git co -b [new-branch] （用于添加修改）&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进入_post目录编写内容&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;md文件头内容,category对应博客标签页内容&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;layout: post&lt;/li&gt;
+&lt;li&gt;category : 技术&lt;/li&gt;
+&lt;li&gt;title: &amp;quot;Git Blog 添加日志流程&amp;quot;&lt;/li&gt;
+&lt;li&gt;description: &amp;quot;规范Blog中git流程&amp;quot;&lt;/li&gt;
+&lt;li&gt;tagline: &amp;quot;技术就是生产力&amp;quot;&lt;/li&gt;
+&lt;li&gt;tags : [技术,Linux,Blog ]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;category 选项 【技术,生活，简历，厨房，设备】&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;文件编写完成后执行
+$jekyll server&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;验证版面内容&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;推送分支到远程&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;$git add .&lt;/p&gt;
+
+&lt;p&gt;$git ci&lt;/p&gt;
+
+&lt;p&gt;$git push orgin [new-branch]:[new-branch]&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;推送步骤只为了练习git常用的远程管理流程可以直接执行以下步骤.&lt;/p&gt;
+
+&lt;p&gt;$git co master&lt;/p&gt;
+
+&lt;p&gt;$git merge &lt;new-brach&gt;&lt;/p&gt;
+
+&lt;p&gt;$git add &lt;filename&gt;&lt;/p&gt;
+
+&lt;p&gt;$git push &lt;/p&gt;
+
+&lt;h2&gt;如何删除本地/远程分支&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;删除远程分支&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;$git push orgin :feature/add-new-post-20150104&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;删除本地分支&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;$git branch -D feature/add-new-post-20150104&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
         <title>moto360</title>
         <link>http://wwdd23.gitblog.io/2015/01/03/moto360.html</link>
         <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/03/moto360.html</guid>
@@ -844,15 +915,6 @@ Linux系统开发者。        |&lt;br&gt;
 
 对于工作有很高的积极性，对新工具有较强的好奇心与学习的动力。能够承受很强的工作压力，保持较好的工作状态。性格开朗，乐观且积极向上。有较长工作时间，高负荷压力下工作经验，善于调节工作压力与身体精神的状态。对于项目的实施有较强的执行力，善于与他人沟通，有较强的团队合作精神。善于独立分析，解决问题。个人规划中，希望向产品以及互联网方面转型。
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>New Blog</title>
-        <link>http://wwdd23.gitblog.io/2014/03/03/moring.html</link>
-        <guid isPermaLink="true">http://wwdd23.gitblog.io/2014/03/03/moring.html</guid>
-        <pubDate>Mon, 03 Mar 2014 00:00:00 +0800</pubDate>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/newblog.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</description>
       </item>
     
   </channel>
