@@ -1,0 +1,72 @@
+---
+layout: post
+category : 技术
+title: "Git Blog 添加日志流程"
+description: "规范Blog中git流程"
+tagline: "技术就是生产力"
+tags : [技术,Linux,Blog ]
+
+---
+
+
+##Git Blog 添加日志流程规范
+
+1. git co -b [new-branch] （用于添加修改）
+
+2. 进入_post目录编写内容
+
+3. md文件头内容,category对应博客标签页内容
+
+- layout: post
+- category : 技术
+- title: "Git Blog 添加日志流程"
+- description: "规范Blog中git流程"
+- tagline: "技术就是生产力"
+- tags : [技术,Linux,Blog ]
+
+category 选项 【技术,生活，简历，厨房，设备】
+
+4. 文件编写完成后执行
+   $jekyll server
+
+验证版面内容
+
+5. 推送分支到远程
+
+
+-----------------------------------
+
+$git add .
+
+$git ci
+
+$git push orgin [new-branch]:[new-branch]
+
+------------------------------------------
+
+推送步骤只为了练习git常用的远程管理流程可以直接执行以下步骤.
+
+$git co master
+
+$git merge <new-brach>
+
+$git add <filename>
+
+$git push 
+
+
+
+
+##如何删除本地/远程分支
+
+>删除远程分支
+
+$git push orgin :feature/add-new-post-20150104
+
+
+>删除本地分支
+
+$git branch -D feature/add-new-post-20150104
+
+
+
