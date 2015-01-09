@@ -38,14 +38,23 @@ tags : [技术,Linux,Blog ]
 
     $ exprot LANG=zh_CN.GBK
 
-均无效果
+有些说明要安装unascii2..balabala的工具
 
-收获了以下blog。
+空间洁癖，不想安装
+
+所以以上内容，均无效果!
+
+------------------------------------------------
+
+期间收获了收获了以下blog。
 
 [蓝色的华](http://bluehua.org/2011/04/22/1624.html)
+
 [池建强](http://macshuo.com/?p=676#comment-3448)
 
 看完相关博客中内容，终究也没有解决。
+
+------------------------------------------------
 
 顺手man tree查看，
 
@@ -65,4 +74,4 @@ google中显示一个tree -N
     -N     Print  non-printable  characters  as is instead of as escaped octal
               numbers.
 
-##原来不是汉字乱码是，出现了字符转义。
+##原来不是汉字乱码,是出现了字符转义。

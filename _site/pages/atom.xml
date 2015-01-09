@@ -39,14 +39,23 @@
 
 $ exprot LANG=zh_CN.GBK
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;均无效果&lt;/p&gt;
+&lt;p&gt;有些说明要安装unascii2..balabala的工具&lt;/p&gt;
 
-&lt;p&gt;收获了以下blog。&lt;/p&gt;
+&lt;p&gt;空间洁癖，不想安装&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bluehua.org/2011/04/22/1624.html&quot;&gt;蓝色的华&lt;/a&gt;
-&lt;a href=&quot;http://macshuo.com/?p=676#comment-3448&quot;&gt;池建强&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;所以以上内容，均无效果!&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;期间收获了收获了以下blog。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bluehua.org/2011/04/22/1624.html&quot;&gt;蓝色的华&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://macshuo.com/?p=676#comment-3448&quot;&gt;池建强&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;看完相关博客中内容，终究也没有解决。&lt;/p&gt;
+
+&lt;hr&gt;
 
 &lt;p&gt;顺手man tree查看，&lt;/p&gt;
 
@@ -63,7 +72,7 @@ $ exprot LANG=zh_CN.GBK
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;-N     Print  non-printable  characters  as is instead of as escaped octal
           numbers.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;原来不是汉字乱码是，出现了字符转义。&lt;/h2&gt;
+&lt;h2&gt;原来不是汉字乱码,是出现了字符转义。&lt;/h2&gt;
 </description>
       </item>
     
