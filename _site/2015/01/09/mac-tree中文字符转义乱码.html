@@ -2,9 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8">
-<title>25日秘密001人生讨论 | About Me About U</title>
+<title>Mac tree 中文文件名显示异常 | About Me About U</title>
 <meta name="author" content="吴迪">
 
+
+  <meta name="description " content="Mac中使用tree命令中文显示异常">
 
 <link rel="shortcut icon" href="/images/bike.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -862,51 +864,66 @@
             <div class="row">
   <div class="col-md-13 aside3-title">
     <br>
-    <h2 id="#identifier">25日秘密001人生讨论</h2>
-    2014年12月26日
+    <h2 id="#identifier">Mac tree 中文文件名显示异常</h2>
+    2015年01月09日
   </div>
   <div class="col-md-13 aside3-content">
     <hr>
     <div id="content">
-      <h1>25日秘密群001人生讨论</h1>
+      <blockquote>
+<p>一直在Linux中使用tree命令来获取目录结构</p>
 
-<blockquote>
-<p>关键字</p>
+<p>突然有一天我想整理下Mac中的文件归类下目录</p>
+
+<p>也就是今天！</p>
 </blockquote>
 
-<h2>- 小团圆 （香港仔）</h2>
+<h2>结果</h2>
 
-<h2>- 梁咏琪</h2>
+<p>安装tree工具</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$brew install tree
+</code></pre></div>
+<p>显示的居然尼玛是这个样子。。。。</p>
 
-<h2>- 元旦假期</h2>
+<p>这个样子。。</p>
 
-<h2>- CD机</h2>
+<p>样子。。</p>
 
-<h2>- walkman</h2>
+<p><img src="/images/mac-tree-error.png" alt=""></p>
 
-<h2>- MD</h2>
+<p>看到上图，一下子被错误的显示信息冲昏了头脑。
+各种search，不断google.</p>
 
-<h2>- MP3</h2>
+<p>尝试了</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$tree -charset ASCII/zh_CN.GBK
 
-<h2>- 心动 金城武</h2>
+$ exprot LANG=zh_CN.GBK
+</code></pre></div>
+<p>均无效果</p>
 
-<h2>- 破事儿</h2>
+<p>收获了以下blog。</p>
 
-<h2>- 情感</h2>
+<p><a href="http://bluehua.org/2011/04/22/1624.html">蓝色的华</a>
+<a href="http://macshuo.com/?p=676#comment-3448">池建强</a></p>
 
-<h2>- 变化</h2>
+<p>看完相关博客中内容，终究也没有解决。</p>
 
-<h2>- 爱情</h2>
+<p>顺手man tree查看，</p>
 
-<h2>- 日记</h2>
+<p>没看出个究竟。。。</p>
 
-<h2>- 骑车</h2>
+<p>google中显示一个tree -N </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$tree -N
+</code></pre></div>
+<p>尝试结果如下：</p>
 
-<h2>- 晚安</h2>
+<p><img src="/images/mac-tree-fix.png" alt=""> </p>
 
-<ul>
-<li></li>
-</ul>
+<p>查看man pages </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">-N     Print  non-printable  characters  as is instead of as escaped octal
+          numbers.
+</code></pre></div>
+<h2>原来不是汉字乱码是，出现了字符转义。</h2>
 
     </div>
     <hr>
