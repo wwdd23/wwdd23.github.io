@@ -41,8 +41,11 @@ tags : [技术,Linux,vim]
         See ":help W12" for more info.
         [O]K, (L)oad File:
 
-输入 (L) 写入文件
+输入 
 
+        L  #写入
+
+退出
     :q
 
 轻松退出

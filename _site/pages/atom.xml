@@ -41,7 +41,8 @@
     See &amp;quot;:help W12&amp;quot; for more info.
     [O]K, (L)oad File:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;输入 (L) 写入文件&lt;/p&gt;
+&lt;p&gt;输入 
+        (L) #写入&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;:q
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;轻松退出&lt;/p&gt;
