@@ -6,6 +6,65 @@
     <description>个人笔记 技术分享</description>
     
       <item>
+        <title>在没有root权限编辑vim文件的保存方法</title>
+        <link>http://wwdd23.gitblog.io/2015/01/16/save-vim-without-sudo.html</link>
+        <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/16/save-vim-without-sudo.html</guid>
+        <pubDate>Fri, 16 Jan 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h1&gt;困惑&lt;/h1&gt;
+
+&lt;p&gt;总出现这么一种状况：&lt;/p&gt;
+
+&lt;p&gt;在vim中编辑需要root权限的文件，但是手滑没有使用sudo。&lt;/p&gt;
+
+&lt;p&gt;当编辑完成后发现无法保存。&lt;/p&gt;
+
+&lt;p&gt;多么痛彻心扉的感觉。&lt;/p&gt;
+
+&lt;h1&gt;解决&lt;/h1&gt;
+
+&lt;p&gt;在我脑海中，有这么一种方法。&lt;/p&gt;
+
+&lt;p&gt;可以让我在普通权限下，保存需要sudo后的文件。&lt;/p&gt;
+
+&lt;p&gt;但是这项技能一直在我深深的脑海中,的边缘，用时会忘却。。&lt;/p&gt;
+
+&lt;p&gt;这项技能是这样用的&lt;/p&gt;
+
+&lt;p&gt;在保存退出时输入：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;    :w !sudo tee %
+
+    jasllsadfj
+    lsajljdf
+
+    Press ENTER or type command to continue
+    W12: Warning: File &amp;quot;test&amp;quot; has changed and the buffer was changed in Vim as well
+    See &amp;quot;:help W12&amp;quot; for more info.
+    [O]K, (L)oad File:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;输入 (L) 写入文件&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;:q
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;轻松退出&lt;/p&gt;
+
+&lt;h1&gt;解析：&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;!sudo tee %&lt;/p&gt;
+
+&lt;p&gt;%　　　　　  #VI/VIM编辑的文件内容&lt;/p&gt;
+
+&lt;p&gt;!　　　　　　#管道&lt;/p&gt;
+
+&lt;p&gt;sudo　　　　 #以root权限操作&lt;/p&gt;
+
+&lt;p&gt;tee　　　　　#将标准输入（即通过管道过来的当前编辑的文件内容）输出到标准输出，同时写入到指定的文件中（即VI/VIM当前编辑的文件）&lt;/p&gt;
+
+&lt;p&gt;%　　　　　  #VI/VIM编辑的文件&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      </item>
+    
+      <item>
         <title>Mac tree 中文文件名显示异常</title>
         <link>http://wwdd23.gitblog.io/2015/01/09/mac-tree-chinese-display-error.html</link>
         <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/09/mac-tree-chinese-display-error.html</guid>
@@ -815,15 +874,6 @@ find ./ -mmin 4&lt;/p&gt;
 &lt;p&gt;删除本地分支 &lt;/p&gt;
 
 &lt;p&gt;git branch -d the&lt;em&gt;local&lt;/em&gt;branch  &lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>妇女节</title>
-        <link>http://wwdd23.gitblog.io/2014/03/08/day.html</link>
-        <guid isPermaLink="true">http://wwdd23.gitblog.io/2014/03/08/day.html</guid>
-        <pubDate>Sat, 08 Mar 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h1&gt;妇女节快乐&lt;/h1&gt;
 </description>
       </item>
     
