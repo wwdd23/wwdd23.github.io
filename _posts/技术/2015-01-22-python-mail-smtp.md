@@ -8,7 +8,8 @@ tags : [技术,Linux,Blog,mail ]
 
 ---
 
-##首先完成使用python发送邮件，使用163邮箱向工作邮箱发送邮件
+##首先完成使用python发送邮件
+###使用163邮箱向工作邮箱发送邮件
 
 
     #!/usr/bin/env python
@@ -43,7 +44,7 @@ tags : [技术,Linux,Blog,mail ]
 
 ##第二部发送附件
 
-添加附件，使用att1
+>添加附件，使用att1
 
 
     att1 = MIMEText(open('/Users/wudi/github/mykindle/51cce9cd0120c.jpg', 'rb').read(), 'base64', 'gb2312')
@@ -53,11 +54,26 @@ tags : [技术,Linux,Blog,mail ]
     
 
 
-执行:
+>执行:
 
     $python sendmail.py
 
 
     发送成功
 
-![](/images/sendmail.png)
+
+![](/images/sendmail.png )
+
+
+___
+
+上图内容可真没有用客户端发送什么的，只需执行命令即可。
+
+完成邮箱的工作，下一步就是解决如何feed rss/atom文件，
+
+转化为mobi格式，发送到kindle中了。
+
+不要问，这个难道不需要服务器么？
+
+告诉你一个秘密。。。我在公司的工作机从来都不关机呵呵哒
+
