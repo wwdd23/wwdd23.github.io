@@ -6,6 +6,79 @@
     <description>个人笔记 技术分享</description>
     
       <item>
+        <title>使用pyhton SMTP发送邮件</title>
+        <link>http://wwdd23.gitblog.io/2015/01/22/python-mail-smtp.html</link>
+        <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/22/python-mail-smtp.html</guid>
+        <pubDate>Thu, 22 Jan 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h2&gt;使用python发送邮件&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import smtplib
+
+#创建一个带附件的实例
+msg = MIMEMultipart()
+
+#构造附件1
+##att1 = MIMEText(open(&amp;#39;d:\\123.rar&amp;#39;, &amp;#39;rb&amp;#39;).read(), &amp;#39;base64&amp;#39;, &amp;#39;gb2312&amp;#39;)
+#att1[&amp;quot;Content-Type&amp;quot;] = &amp;#39;application/octet-stream&amp;#39;
+#att1[&amp;quot;Content-Disposition&amp;quot;] = &amp;#39;attachment; filename=&amp;quot;123.doc&amp;quot;&amp;#39;#这里的filename可以任意写，写什么名字，邮件中显示什么名字
+#msg.attach(att1)
+#
+##构造附件2
+#att2 = MIMEText(open(&amp;#39;d:\\123.txt&amp;#39;, &amp;#39;rb&amp;#39;).read(), &amp;#39;base64&amp;#39;, &amp;#39;gb2312&amp;#39;)
+#att2[&amp;quot;Content-Type&amp;quot;] = &amp;#39;application/octet-stream&amp;#39;
+#att2[&amp;quot;Content-Disposition&amp;quot;] = &amp;#39;attachment; filename=&amp;quot;123.txt&amp;quot;&amp;#39;
+#msg.attach(att2)
+
+#加邮件头
+msg[&amp;#39;from&amp;#39;] = &amp;#39;wwdd.23@163.com&amp;#39;
+msg[&amp;#39;to&amp;#39;] = &amp;#39;di.wu@i-soft.com.cn&amp;#39;
+msg[&amp;#39;subject&amp;#39;] = &amp;#39;hello world&amp;#39;
+#发送邮件
+try:
+    server = smtplib.SMTP()
+    server.connect(&amp;#39;smtp.163.com&amp;#39;)
+    server.login(&amp;#39;wwdd.23&amp;#39;,&amp;#39;xxxx&amp;#39;)#XXX为用户名，XXXXX为密码
+    server.sendmail(msg[&amp;#39;from&amp;#39;], msg[&amp;#39;to&amp;#39;],msg.as_string())
+    server.quit()
+    print &amp;#39;发送成功&amp;#39;
+
+except Exception, e:  
+    print str(e) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>在Unix/Linux搭建mail服务</title>
+        <link>http://wwdd23.gitblog.io/2015/01/21/build-mail-server.html</link>
+        <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/21/build-mail-server.html</guid>
+        <pubDate>Wed, 21 Jan 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h2&gt;首先需要搭建一个mail服务器&lt;/h2&gt;
+
+&lt;p&gt;建议使用linux系统&lt;/p&gt;
+
+&lt;p&gt;修改/etc/mail.rc文件 , 利用外部邮箱发送邮件&lt;/p&gt;
+
+&lt;p&gt;et from=wwdd.23@163.com
+set smtp=smtp.163.com
+set smtp-auth-user=wwdd.23
+set smtp-auth-password=075100.321
+set smtp-auth=login&lt;/p&gt;
+
+&lt;p&gt;设置之后就可以给外部邮箱发送邮件了，have a test:&lt;/p&gt;
+
+&lt;p&gt;$ mail -s &amp;quot;test&amp;quot; di.wu@i-soft.com.cn &amp;lt; /dev/null&lt;/p&gt;
+
+&lt;p&gt;发送一个正文为空的邮件到i-soft.com.cn邮箱中（/dev/null）&lt;/p&gt;
+
+&lt;h1&gt;第二部发送一个附件&lt;/h1&gt;
+</description>
+      </item>
+    
+      <item>
         <title>在没有root权限编辑vim文件的保存方法</title>
         <link>http://wwdd23.gitblog.io/2015/01/16/save-vim-without-sudo.html</link>
         <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/16/save-vim-without-sudo.html</guid>
@@ -41,11 +114,15 @@
     See &amp;quot;:help W12&amp;quot; for more info.
     [O]K, (L)oad File:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;输入 
-        (L) #写入&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;:q
+&lt;p&gt;输入 &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;    L  #写入
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;轻松退出&lt;/p&gt;
+&lt;p&gt;退出&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;    :q
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;轻松保存退出,不带走一片遗憾&lt;/p&gt;
+
+&lt;p&gt;从此再也不用强制退出，然后sudo vim 再次输入了~~~ &lt;/p&gt;
 
 &lt;h1&gt;解析：&lt;/h1&gt;
 
@@ -820,61 +897,6 @@ GAE代理软件 goagent
 &lt;p&gt;zD  循环删除 (Delete) 光标下的折叠，即嵌套删除折叠。仅当 &amp;#39;foldmethod&amp;#39; 设为 &amp;quot;manual&amp;quot; 或 &amp;quot;marker&amp;quot; 时有效。&lt;/p&gt;
 
 &lt;p&gt;zE  除去 (Eliminate) 窗口里“所有”的折叠。仅当 &amp;#39;foldmethod&amp;#39; 设为 &amp;quot;manual&amp;quot; 或 &amp;quot;marker&amp;quot; 时有效。&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>使用find查找4分钟前修改后的文件</title>
-        <link>http://wwdd23.gitblog.io/2014/03/11/use-find-command.html</link>
-        <guid isPermaLink="true">http://wwdd23.gitblog.io/2014/03/11/use-find-command.html</guid>
-        <pubDate>Tue, 11 Mar 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;How to use find&lt;/h2&gt;
-
-&lt;h4&gt;find the file whitch modify 1 MIN before&lt;/h4&gt;
-
-&lt;p&gt;find (file) -mmin 4
-find ./ -mmin 4&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>git clone 设置代理方式</title>
-        <link>http://wwdd23.gitblog.io/2014/03/08/git-proxy.html</link>
-        <guid isPermaLink="true">http://wwdd23.gitblog.io/2014/03/08/git-proxy.html</guid>
-        <pubDate>Sat, 08 Mar 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h3&gt;GIT 如何设置代理提速git clone&lt;/h3&gt;
-
-&lt;p&gt;大陆由于被GFW，git 登陆与clone会受到影响，所以添加gogant后，可设置代理。&lt;/p&gt;
-
-&lt;p&gt;参加使用 个人配置：&lt;/p&gt;
-
-&lt;p&gt;设置代理 &lt;/p&gt;
-
-&lt;p&gt;git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:port  &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;我个人的配置方法&lt;/em&gt;&lt;/strong&gt;： &amp;quot;git config --global --add http.proxy 127.0.0.1:8087&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;删除代理 &lt;/p&gt;
-
-&lt;p&gt;git config --system (or --global or --local) --unset http.proxy  &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;个人配置&lt;/em&gt;&lt;/strong&gt;：&amp;quot;git config --global --unset http.proxy&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;关闭SSL验证 &lt;/p&gt;
-
-&lt;p&gt;git config --global http.sslVerify false  &lt;/p&gt;
-
-&lt;p&gt;下载代码 &lt;/p&gt;
-
-&lt;p&gt;git clone http://server.com/source.git  &lt;/p&gt;
-
-&lt;p&gt;提交本地branch至remote &lt;/p&gt;
-
-&lt;p&gt;git push &lt;remote-name&gt; &lt;local-branch-name&gt;:&lt;remote-branch-name&gt;  &lt;/p&gt;
-
-&lt;p&gt;删除本地分支 &lt;/p&gt;
-
-&lt;p&gt;git branch -d the&lt;em&gt;local&lt;/em&gt;branch  &lt;/p&gt;
 </description>
       </item>
     

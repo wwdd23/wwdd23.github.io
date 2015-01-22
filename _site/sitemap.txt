@@ -17,6 +17,10 @@
 
 
 
+  /2015/01/22/python-mail-smtp.html
+
+  /2015/01/21/build-mail-server.html
+
   /2015/01/16/save-vim-without-sudo.html
 
   /2015/01/09/mac-tree-chinese-display-error.html
