@@ -1,4 +1,4 @@
----
+q:---
 layout: post
 category : 生活
 title: "坏掉的存片"
@@ -194,9 +194,9 @@ X战警逆转未来HD中英双字.rmvb
 
 最高通缉犯BD中英双字.rmvb
 
-歌曲改变人生BD中英双字.rmvb
+~~歌曲改变人生BD中英双字.rmvb~~
 
-比特币的崛起BD中英双字.rmvb
+~~比特币的崛起BD中英双字.rmvb~~
 
-曾经BD中英双字.rmvb
+~~曾经BD中英双字.rmvb~~
 
