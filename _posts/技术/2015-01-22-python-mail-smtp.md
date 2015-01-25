@@ -11,7 +11,6 @@ tags : [技术,Linux,Blog,mail ]
 ##首先完成使用python发送邮件
 ###使用163邮箱向工作邮箱发送邮件
 
-<code>
     #!/usr/bin/env python
     # -*- coding: utf-8 -*-
     
@@ -38,7 +37,6 @@ tags : [技术,Linux,Blog,mail ]
     except Exception, e:  
         print str(e) 
 
-</code>
 
 发送成功。
 
@@ -47,13 +45,13 @@ tags : [技术,Linux,Blog,mail ]
 
 >添加附件，使用att1
 
-<code>
+
     att1 = MIMEText(open('/Users/wudi/github/mykindle/51cce9cd0120c.jpg', 'rb').read(), 'base64', 'gb2312')
     att1["Content-Type"] = 'application/octet-stream'
     att1["Content-Disposition"] = 'attachment; filename="picture.jpg"'#这里的filename可以任意写，写什么名字，邮件中显示什么名字
     msg.attach(att1)
     
-</code>
+
 
 
 >执行:
