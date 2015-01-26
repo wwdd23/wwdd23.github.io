@@ -44,7 +44,7 @@ The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv
 
 情圣囧色夫BD中英双字.rmvb
 
-菲利普船长BD中英双字.rmvb
+~~菲利普船长BD中英双字.rmvb~~
 
 最后的维加斯BD中英双字.rmvb
 
@@ -70,7 +70,7 @@ The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv
 
 冰雪奇缘BD中英双字.rmvb*
 
-家园防线BD中英双字.rmvb
+~~家园防线BD中英双字.rmvb~~
 
 极品飞车BD中英双字.rmvb
 
@@ -106,7 +106,7 @@ The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv
 
 [心动].Tempting.Heart.1999.DVD.X264.2Audio.AAC.HALFCD-NORM.hoson.mkv
 
-伸冤人BD中英双字.rmvb
+~~伸冤人BD中英双字.rmvb~~
 
 不速之客BD中英双字.rmvb
 
@@ -130,7 +130,7 @@ The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv
 
 佐杜洛夫斯基的沙丘BD中英双字.rmvb
 
-和莎莫的500天.[中英双字.1024分辨率].rmvb
+~~和莎莫的500天.[中英双字.1024分辨率].rmvb~~
 
 诸神之怒.720p.BD中英双字幕.rmvb
 

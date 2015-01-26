@@ -15,7 +15,17 @@
 
   /page3/index.html
 
+  /page4/index.html
 
+
+
+  /2015/01/26/year-summary.html
+
+  /2015/01/23/vim-plugin-configer.html
+
+  /2015/01/23/errormivelist.html
+
+  /2015/01/23/awk-skill.html
 
   /2015/01/22/python-mail-smtp.html
 
