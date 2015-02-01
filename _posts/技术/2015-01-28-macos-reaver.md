@@ -26,3 +26,13 @@ tags : [技术,Linux,Blog ]
 使用reaver
 
     sudo reaver -i en0 -b bssid -vv  
+
+
+
+__状态跟踪__
+
+2015-01-29 开始进行破解
+
+经过3天只完成了40%+,pin码尚未完成暴力破解
+
+中间出现了pin crack error 导致进程异常退出 
