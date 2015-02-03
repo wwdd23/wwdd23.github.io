@@ -48,4 +48,4 @@ __状态跟踪__
 
 
 下图为破解后的wifi密码，能够误码显示的原因当然是在公司登陆后还有一个二级认证的过程，即使你可以连接wifi，依旧无法正常浏览网页
-[wifi reaver](/images/macreaver-succes.png)
+![wifi reaver](/images/macreaver-succes.png)
