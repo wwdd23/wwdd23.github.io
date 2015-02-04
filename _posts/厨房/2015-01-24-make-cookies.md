@@ -1,10 +1,9 @@
 ---
 layout: post
-category : 技术
+category : 厨房
 title: "Cookies"
 description: "做个小饼干"
 tagline: ""
-tags : [饼干，厨房]
 
 ---
 
