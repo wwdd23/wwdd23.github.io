@@ -19,7 +19,15 @@
 
 
 
+  /2015/01/31/remove-error-char.html
+
+  /2015/01/28/shadowsocks-brew.html
+
+  /2015/01/28/macos-reaver.html
+
   /2015/01/26/year-summary.html
+
+  /2015/01/24/make-cookies.html
 
   /2015/01/23/vim-plugin-configer.html
 

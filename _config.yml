@@ -44,3 +44,7 @@ locals:
   about: 关于
   newest: 最新文章
   archive: 归档
+
+markdown: redcarpet
+redcarpet:
+    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
