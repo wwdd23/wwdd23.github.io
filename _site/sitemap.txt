@@ -92,3 +92,5 @@
   /2014/01/13/gaodashang.html
 
   /2013/12/12/Apple-Store-dns.html
+
+  /0201/02/09/linux-xset-Scroll-Lock-led.html
