@@ -6,6 +6,27 @@
     <description>个人笔记 技术分享</description>
     
       <item>
+        <title>使用mac mini搭建rsync服务器</title>
+        <link>http://wwdd23.gitblog.io/2015/02/11/diary-build-mac-rsync-server.html</link>
+        <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/02/11/diary-build-mac-rsync-server.html</guid>
+        <pubDate>Wed, 11 Feb 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;toc_0&quot;&gt;2015年2月11日&lt;/h2&gt;
+
+&lt;p&gt;新购置mac mini 用于公司办公使用，需要解决文档同步问题。&lt;/p&gt;
+
+&lt;p&gt;代码通过github保存。&lt;/p&gt;
+
+&lt;p&gt;每日修改文档如有需要可以通过指定同步Document来获取。&lt;/p&gt;
+
+&lt;p&gt;运行前提，mac mini不断电关机，后台运行rsync服务。&lt;/p&gt;
+
+&lt;p&gt;可考虑方案，使用linux主机作为rsync服务器，实时同步到内网68服务器中。&lt;/p&gt;
+
+&lt;p&gt;---后续更新&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
         <title>删除拷贝后带有转义字符的文件</title>
         <link>http://wwdd23.gitblog.io/2015/01/31/remove-error-char.html</link>
         <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/31/remove-error-char.html</guid>
@@ -1255,47 +1276,6 @@ category 选项 【技术,生活，简历，厨房，设备】
         <description>&lt;p&gt;批量删除文件名种的空格:
 1. find . -type f |sed &amp;#39;s// ////g&amp;#39;
 2. rename &amp;#39;s/ //g&amp;#39; filename&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>使用脚本批量拷贝</title>
-        <link>http://wwdd23.gitblog.io/2014/08/30/%E4%BD%BF%E7%94%A8%E8%84%9A%E6%9C%AC%E6%89%B9%E9%87%8F%E6%8B%B7%E8%B4%9D.html</link>
-        <guid isPermaLink="true">http://wwdd23.gitblog.io/2014/08/30/%E4%BD%BF%E7%94%A8%E8%84%9A%E6%9C%AC%E6%89%B9%E9%87%8F%E6%8B%B7%E8%B4%9D.html</guid>
-        <pubDate>Sat, 30 Aug 2014 00:00:00 +0800</pubDate>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/mdpic/3.57.25.png&quot; alt=&quot;pic1&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;使用while read line 读取有\字符的文件执行文件拷贝&lt;/p&gt;
-
-&lt;p&gt;ls |while read line;do &lt;/p&gt;
-
-&lt;p&gt;cp $line /tmp&lt;/p&gt;
-
-&lt;p&gt;done&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/mdpic/3.59.22.png&quot; alt=&quot;pic1&quot;&gt;
-此方法与for 循环的拷贝的区别是 for 循环不能读出标点后的转译符号。导致不能正常拷贝。&lt;/p&gt;
-
-&lt;p&gt;for i in &lt;code&gt;ls xxx&lt;/code&gt;;do&lt;/p&gt;
-
-&lt;p&gt;cp $i /tmp&lt;/p&gt;
-
-&lt;p&gt;done&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/mdpic/4.00.22.png&quot; alt=&quot;pic1&quot;&gt;
-如果文件名为[电影天堂www.dy2018.com]黑金杀机BD中英双字.rmvb&lt;/p&gt;
-
-&lt;p&gt;终端中会读取为\[电影天堂www.dy2018.com\]黑金杀机BD中英双字.rmvb&lt;/p&gt;
-
-&lt;p&gt;for 循环中会将此文件名在 第二个\后面做换行操作，导致文件名错误后不能正常复制&lt;/p&gt;
-
-&lt;p&gt;试例：&lt;/p&gt;
-
-&lt;p&gt;for 循环书写方法以及现象:
-&lt;img src=&quot;/images/mdpic/3.57.53.png&quot; alt=&quot;pic1&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;while 循环书写方法以及现象:
-&lt;img src=&quot;/images/mdpic/3.58.35.png&quot; alt=&quot;pic1&quot;&gt;&lt;/p&gt;
 </description>
       </item>
     
