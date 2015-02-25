@@ -1,4 +1,4 @@
-q:---
+---
 layout: post
 category : 生活
 title: "坏掉的存片"
