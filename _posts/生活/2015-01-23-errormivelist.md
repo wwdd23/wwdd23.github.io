@@ -1,4 +1,4 @@
-q:---
+---
 layout: post
 category : 生活
 title: "坏掉的存片"
@@ -74,7 +74,7 @@ The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv
 
 极品飞车BD中英双字.rmvb
 
-美国骗局BD中英双字.rmvb
+~~美国骗局BD中英双字.rmvb~~
 
 昆虫总动员BD无字幕版.rmvb
 
@@ -112,29 +112,29 @@ The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv
 
 心花路放BD中英双字.rmvb
 
-末日迷踪BD中英双字.rmvb
+~~末日迷踪BD中英双字.rmvb~~
 
-皮囊之下BD中英双字.rmvb
+~~皮囊之下BD中英双字.rmvb~~
 
-如果我留下BD中英双字.rmvb
+~~如果我留下BD中英双字.rmvb~~
 
-意大利之旅BD中英双字.rmvb
+~~意大利之旅BD中英双字.rmvb~~
 
-消失的爱人BD中英双字.rmvb
+~~消失的爱人BD中英双字.rmvb~~
 
 德古拉元年HD中英双字.rmvb
 
 你眼中的世界BD中英双字.rmvb
 
-彗星来的那一夜BD中英双字.rmvb
+~~彗星来的那一夜BD中英双字.rmvb~~
 
-佐杜洛夫斯基的沙丘BD中英双字.rmvb
+~~佐杜洛夫斯基的沙丘BD中英双字.rmvb~~
 
 ~~和莎莫的500天.[中英双字.1024分辨率].rmvb~~
 
 诸神之怒.720p.BD中英双字幕.rmvb
 
-真爱至上.rmvb
+~~真爱至上.rmvb~~
 
 海盗电台.[中英双字.1024分辨率]
 
@@ -148,7 +148,7 @@ The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv
 
 飞机总动员BD中英双字
 
-攻壳机动队崛起4BD日语中字
+~~攻壳机动队崛起4BD日语中字~~
 
 蓝精灵2BD中英双字
 
@@ -156,9 +156,9 @@ The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv
 
 飞机总动员2火线救援BD国粤英3语双字[电影天堂www.dy2018.com]
 
-霍比特人2史矛革之战BD中英双字精校版
+~~霍比特人2史矛革之战BD中英双字精校版~~
 
-美国队长BD中英双字.rmvb
+~~美国队长BD中英双字.rmvb~~
 
 X战警逆转未来HD中英双字.rmvb
 
@@ -166,29 +166,29 @@ X战警逆转未来HD中英双字.rmvb
 
 金刚狼2BD中英双字.rmvb
 
-钢铁侠2BD中英双字.rmvb
+~~钢铁侠2BD中英双字.rmvb~~
 
 钢铁侠3.BD.720p.中英双字幕.rmvb
 
-美国队长2.BD.720p.国英双语.中英双字幕.mkv
+~~美国队长2.BD.720p.国英双语.中英双字幕.mkv~~
 
 雷神BD中英双字[电影天堂www.dy2018.com].rmvb
 
 钢铁侠BD国英双语双字[电影天堂www.dy2018.com].mkv
 
-美国队长2BD国英双语双字典藏版[电影天堂www.dy2018.com].mkv
+~~美国队长2BD国英双语双字典藏版[电影天堂www.dy2018.com].mkv~~
 
 复仇者联盟BD双语双字[电影天堂www.dy2018.com].mkv
 
-银河护卫队BD国英双语双字[电影天堂www.dy2018.com].mkv
+~~银河护卫队BD国英双语双字[电影天堂www.dy2018.com].mkv~~
 
 敢死队3BD中英双字.rmvb
 
-年轻人BD中英双字.rmvb
+~~年轻人BD中英双字.rmvb~~
 
-心在彼处BD中英双字.rmvb
+~~心在彼处BD中英双字.rmvb~~
 
-泽西男孩BD中英双字.rmvb
+~~泽西男孩BD中英双字.rmvb~~
 
 驱魔警探BD中英双字.rmvb
 
