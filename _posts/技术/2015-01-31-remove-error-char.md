@@ -1,7 +1,7 @@
 ---
 layout: post
 category : 技术
-title: "删除OSX拷贝到播放器中的"._"文件"
+title: "删除OSX拷贝到播放器中的'._'文件"
 description: "使用脚本管理文件"
 tagline: "技术就是生产力"
 tags : [技术,Linux,Blog ]

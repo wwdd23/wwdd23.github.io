@@ -6,6 +6,57 @@
     <description>个人笔记 技术分享</description>
     
       <item>
+        <title>不输入密码运行kdesu</title>
+        <link>http://wwdd23.gitblog.io/2015/03/24/kdesu-nopasswd.html</link>
+        <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/03/24/kdesu-nopasswd.html</guid>
+        <pubDate>Tue, 24 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;ol&gt;
+&lt;li&gt;开启当前用户,sudo执行不需输入密码功能。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;编辑 /etc/sudoers&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;去除注释:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;## Same thing without a password
+%wheel ALL=(ALL) NOPASSWD: ALL
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;创建编辑一下内容文件:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;KDE下常用kdesu以root权限执行GUI程序。默认情况下，即使root账户被禁用，kdesu仍会尝试使用su切换root。需要配置kdesu以使用sudo，创建/编辑/usr/share/config/kdesurc加入：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;[super-user-command]
+super-user-command=sudo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;注销后尝试。&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>多台设备使用github私钥</title>
+        <link>http://wwdd23.gitblog.io/2015/03/24/github_id_rse_set.html</link>
+        <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/03/24/github_id_rse_set.html</guid>
+        <pubDate>Tue, 24 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;新买一个mac mini后搭建了相关生产环境，今天在写日志是发现拷贝过来的id_rsa无法上传代码。&lt;/p&gt;
+
+&lt;p&gt;解决方案如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;将原始id&lt;u&gt;rsa id&lt;/u&gt;rsa.pub 拷贝到其他目录&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;执行 &lt;/p&gt;
+
+&lt;p&gt;$ssh-keygen -t rsa -C &amp;quot;your_email@example.com&amp;quot;
+&lt;code&gt;重新生成ssh-keygen&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;将原始公钥/私钥文件覆盖新生成的文件&lt;/p&gt;
+
+&lt;p&gt;$cp id&lt;u&gt;rsa id&lt;/u&gt;rsd.pub .ssh&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;此时运行尝试是否能够正常上传源码不？&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
         <title>使用mac mini搭建rsync服务器</title>
         <link>http://wwdd23.gitblog.io/2015/02/11/diary-build-mac-rsync-server.html</link>
         <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/02/11/diary-build-mac-rsync-server.html</guid>
@@ -27,7 +78,28 @@
       </item>
     
       <item>
-        <title>删除拷贝后带有转义字符的文件</title>
+        <title>Enable Scroll Lock Led in Linux</title>
+        <link>http://wwdd23.gitblog.io/2015/02/09/linux-xset-Scroll-Lock-led.html</link>
+        <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/02/09/linux-xset-Scroll-Lock-led.html</guid>
+        <pubDate>Mon, 09 Feb 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;Linux 中 Scroll Lock 键按下后 键盘灯不点亮。&lt;/p&gt;
+
+&lt;p&gt;使用 xev 调试有信息&lt;/p&gt;
+
+&lt;h3 id=&quot;toc_0&quot;&gt;解决办法&lt;/h3&gt;
+
+&lt;p&gt;使用命令：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;$xset led named &amp;quot;Scroll Lock&amp;quot;  #on
+$xset -led named &amp;quot;Scroll Lock&amp;quot; #off 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;键盘灯可以选择亮起,但无锁定效果&lt;/p&gt;
+
+&lt;p&gt;需要通过脚本绑定按键信息。&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>删除OSX拷贝到播放器中的'._'文件</title>
         <link>http://wwdd23.gitblog.io/2015/01/31/remove-error-char.html</link>
         <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/31/remove-error-char.html</guid>
         <pubDate>Sat, 31 Jan 2015 00:00:00 +0800</pubDate>
@@ -553,21 +625,11 @@ $vim ~/.vim/template/py.clp
       </item>
     
       <item>
-        <title>Errormivelist</title>
+        <title>坏掉的存片</title>
         <link>http://wwdd23.gitblog.io/2015/01/23/errormivelist.html</link>
         <guid isPermaLink="true">http://wwdd23.gitblog.io/2015/01/23/errormivelist.html</guid>
         <pubDate>Fri, 23 Jan 2015 00:00:00 +0800</pubDate>
-        <description>&lt;p&gt;q:---
-layout: post
-category : 生活
-title: &amp;quot;坏掉的存片&amp;quot;
-description: &amp;quot;拷贝导致坏掉的电影&amp;quot;
-tagline: &amp;quot;&amp;quot;
-tags : [生活]&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv&lt;/p&gt;
+        <description>&lt;p&gt;The.Blacklist.1x03.Wujing.720p.HDTV.x264-DIMENSION.[tvu.org.ru].mkv&lt;/p&gt;
 
 &lt;p&gt;囚徒BD中英双字.rmvb&lt;/p&gt;
 
@@ -633,7 +695,7 @@ tags : [生活]&lt;/p&gt;
 
 &lt;p&gt;极品飞车BD中英双字.rmvb&lt;/p&gt;
 
-&lt;p&gt;美国骗局BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;美国骗局BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;昆虫总动员BD无字幕版.rmvb&lt;/p&gt;
 
@@ -671,29 +733,29 @@ tags : [生活]&lt;/p&gt;
 
 &lt;p&gt;心花路放BD中英双字.rmvb&lt;/p&gt;
 
-&lt;p&gt;末日迷踪BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;末日迷踪BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;皮囊之下BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;皮囊之下BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;如果我留下BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;如果我留下BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;意大利之旅BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;意大利之旅BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;消失的爱人BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;消失的爱人BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;德古拉元年HD中英双字.rmvb&lt;/p&gt;
 
 &lt;p&gt;你眼中的世界BD中英双字.rmvb&lt;/p&gt;
 
-&lt;p&gt;彗星来的那一夜BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;彗星来的那一夜BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;佐杜洛夫斯基的沙丘BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;佐杜洛夫斯基的沙丘BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;del&gt;和莎莫的500天.[中英双字.1024分辨率].rmvb&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;诸神之怒.720p.BD中英双字幕.rmvb&lt;/p&gt;
 
-&lt;p&gt;真爱至上.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;真爱至上.rmvb&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;海盗电台.[中英双字.1024分辨率]&lt;/p&gt;
 
@@ -707,7 +769,7 @@ tags : [生活]&lt;/p&gt;
 
 &lt;p&gt;飞机总动员BD中英双字&lt;/p&gt;
 
-&lt;p&gt;攻壳机动队崛起4BD日语中字&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;攻壳机动队崛起4BD日语中字&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;蓝精灵2BD中英双字&lt;/p&gt;
 
@@ -715,9 +777,9 @@ tags : [生活]&lt;/p&gt;
 
 &lt;p&gt;飞机总动员2火线救援BD国粤英3语双字[电影天堂www.dy2018.com]&lt;/p&gt;
 
-&lt;p&gt;霍比特人2史矛革之战BD中英双字精校版&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;霍比特人2史矛革之战BD中英双字精校版&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;美国队长BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;美国队长BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;X战警逆转未来HD中英双字.rmvb&lt;/p&gt;
 
@@ -725,29 +787,29 @@ tags : [生活]&lt;/p&gt;
 
 &lt;p&gt;金刚狼2BD中英双字.rmvb&lt;/p&gt;
 
-&lt;p&gt;钢铁侠2BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;钢铁侠2BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;钢铁侠3.BD.720p.中英双字幕.rmvb&lt;/p&gt;
 
-&lt;p&gt;美国队长2.BD.720p.国英双语.中英双字幕.mkv&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;美国队长2.BD.720p.国英双语.中英双字幕.mkv&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;雷神BD中英双字[电影天堂www.dy2018.com].rmvb&lt;/p&gt;
 
 &lt;p&gt;钢铁侠BD国英双语双字[电影天堂www.dy2018.com].mkv&lt;/p&gt;
 
-&lt;p&gt;美国队长2BD国英双语双字典藏版[电影天堂www.dy2018.com].mkv&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;美国队长2BD国英双语双字典藏版[电影天堂www.dy2018.com].mkv&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;复仇者联盟BD双语双字[电影天堂www.dy2018.com].mkv&lt;/p&gt;
 
-&lt;p&gt;银河护卫队BD国英双语双字[电影天堂www.dy2018.com].mkv&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;银河护卫队BD国英双语双字[电影天堂www.dy2018.com].mkv&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;敢死队3BD中英双字.rmvb&lt;/p&gt;
 
-&lt;p&gt;年轻人BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;年轻人BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;心在彼处BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;心在彼处BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;泽西男孩BD中英双字.rmvb&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;泽西男孩BD中英双字.rmvb&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;驱魔警探BD中英双字.rmvb&lt;/p&gt;
 
@@ -1172,110 +1234,6 @@ category 选项 【技术,生活，简历，厨房，设备】
 &lt;ul&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>写一篇有关Christmas的日记</title>
-        <link>http://wwdd23.gitblog.io/2014/12/24/Chrismas.html</link>
-        <guid isPermaLink="true">http://wwdd23.gitblog.io/2014/12/24/Chrismas.html</guid>
-        <pubDate>Wed, 24 Dec 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h1 id=&quot;toc_0&quot;&gt;写一篇有关Christmas的日记&lt;/h1&gt;
-
-&lt;p&gt;这天是几位朋友的生日心中默默祝福他们生日快乐~&lt;/p&gt;
-
-&lt;p&gt;这天原本依旧是骑车-上班-下班-骑车的生活~&lt;/p&gt;
-
-&lt;p&gt;这天在下班前收到小伙伴们临时组局的消息~&lt;/p&gt;
-
-&lt;p&gt;这天下班后朋友几人在原本就该朋友聚会的日子里分食了烤鸡~
-（交换品尝了面食）&lt;/p&gt;
-
-&lt;p&gt;这天晚饭后在Cows二层的阁楼中，舀食着冰淇淋，慢嘬着热可可~&lt;/p&gt;
-
-&lt;p&gt;话题不断的聊了几个小时，调侃，生活，趣闻，电影，音乐，台湾腔, 或许还有将来~&lt;/p&gt;
-
-&lt;p&gt;这天在聊天的几个小时里，几人坐卧在懒人沙发中，微醺了~&lt;/p&gt;
-
-&lt;p&gt;这天店家的热情一同温暖着寒风中骑行的rider们~&lt;/p&gt;
-
-&lt;p&gt;可以放车的拐角，文雅的店员~&lt;/p&gt;
-
-&lt;p&gt;Share抓拍我们搬车照片的老板~&lt;/p&gt;
-
-&lt;p&gt;这天我忘记了放在冰箱的午间便当~&lt;/p&gt;
-
-&lt;p&gt;当再次启程骑车奔回家中;&lt;/p&gt;
-
-&lt;p&gt;洗漱，整理，准备继续未完成的工作时;&lt;/p&gt;
-
-&lt;p&gt;随手开启一瓶可乐;&lt;/p&gt;
-
-&lt;p&gt;圣诞定制的Logo;&lt;/p&gt;
-
-&lt;p&gt;~在这几个瞬间，忽闪过的画面&lt;/p&gt;
-
-&lt;p&gt;~感觉到温馨的生活气息&lt;/p&gt;
-
-&lt;p&gt;~美好却又平常的一天&lt;/p&gt;
-
-&lt;p&gt;~已经踱步到25日&lt;/p&gt;
-
-&lt;p&gt;~Well it`s Christmas time&lt;/p&gt;
-
-&lt;p&gt;循环着 Kiss Me Babe,it`s Christmas time - OWL CITY&lt;/p&gt;
-
-&lt;p&gt;图片：
-&lt;img src=&quot;/images/christmas-2014-12-24-bike.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img src=&quot;/images/christmas-2014-12-24.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img src=&quot;/images/christmas-2014-12-24-2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;餐厅：Jazz·ya（爵士吧）&lt;/p&gt;
-
-&lt;p&gt;甜点：Cows梦工厂&lt;/p&gt;
-
-&lt;p&gt;文字上传:豆瓣/Gitpages Blog&lt;/p&gt;
-
-&lt;p&gt;如果能找到我Git Blog也可以看比较多东西。。&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>Mac中goagent上传时问题小结</title>
-        <link>http://wwdd23.gitblog.io/2014/09/14/goagent-create.html</link>
-        <guid isPermaLink="true">http://wwdd23.gitblog.io/2014/09/14/goagent-create.html</guid>
-        <pubDate>Sun, 14 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;p&gt;在mac 中安装goagent上传，创建appid时会遇到几个问题。
-以下是相关的几个解决办法：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Mac 中输入命令的注意事项。&lt;/p&gt;
-
-&lt;p&gt;python2.7 updater.zip 上传时需要使用，此状态是否需要root权限，我也有些迷茫了。但最好使用sudo su 进入root账号。&lt;/p&gt;
-
-&lt;p&gt;python2.7 proxy.py&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;首次创建appid，updater.zip上传时，出现无法上传的问题。&lt;/p&gt;
-
-&lt;p&gt;这个问题需要使用https://www.google.com/settings/security/lesssecureapps&lt;/p&gt;
-
-&lt;p&gt;将访问不够安全账户功能开启后即可上传。&lt;/p&gt;
-
-&lt;p&gt;上传时需要输入两次gmail账户。&lt;/p&gt;
-
-&lt;p&gt;部署到服务器报错AttributeError: can&amp;#39;t set attribute &lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;error 403  添加环境变量&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>批量修改文件名总结</title>
-        <link>http://wwdd23.gitblog.io/2014/08/30/%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%8D%E7%9A%84%E7%A9%BA%E6%A0%BC%E4%BB%A5%E5%8F%8A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E5%90%8D.html</link>
-        <guid isPermaLink="true">http://wwdd23.gitblog.io/2014/08/30/%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%8D%E7%9A%84%E7%A9%BA%E6%A0%BC%E4%BB%A5%E5%8F%8A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E5%90%8D.html</guid>
-        <pubDate>Sat, 30 Aug 2014 00:00:00 +0800</pubDate>
-        <description>&lt;p&gt;批量删除文件名种的空格:
-1. find . -type f |sed &amp;#39;s// ////g&amp;#39;
-2. rename &amp;#39;s/ //g&amp;#39; filename&lt;/p&gt;
 </description>
       </item>
     
