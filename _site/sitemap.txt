@@ -17,9 +17,17 @@
 
   /page4/index.html
 
+  /page5/index.html
 
+
+
+  /2015/03/24/kdesu-nopasswd.html
+
+  /2015/03/24/github_id_rse_set.html
 
   /2015/02/11/diary-build-mac-rsync-server.html
+
+  /2015/02/09/linux-xset-Scroll-Lock-led.html
 
   /2015/01/31/remove-error-char.html
 
@@ -94,5 +102,3 @@
   /2014/01/13/gaodashang.html
 
   /2013/12/12/Apple-Store-dns.html
-
-  /0201/02/09/linux-xset-Scroll-Lock-led.html
