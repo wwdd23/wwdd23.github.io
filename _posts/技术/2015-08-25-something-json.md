@@ -1,3 +1,13 @@
+---
+layout: post
+category : 技术
+title: "json相关总结(乱序未整理)"
+description: "抓取过程中对json的操作"
+tagline: "技术就是生产力"
+tags : [技术,Linux,爬虫,javascript ]
+
+---
+
 ###json内容提取  js python 
  
 ######js 读取 json方式
@@ -46,33 +56,53 @@ jQuery501824([
 
 `request调用注意点`
 
-判断response.statusCode状态 是否为200
+*json判断response.statusCode状态 是否为200*
 
 
+#####js api 内容整理
 
-接口内容
+需要去除上文中jQuery501824\(\[ \]\)内容
 
-js api 内容整理
+由于现实内容直接现实格式中包含了换行符，所以需要先将数据中空格去除。
 
+> js 去除字符传中空格
 
+方法：
 
-js 去除字符传中空格
+```
+var ss = body.replace(/\s+/g,"")
+```
 
+整理后的字符串内容就可以开始转化为JSON格式进行解析.
 
 ####整理接口信息流程
 
 读入数据，
 
+
 检查数据类型
+
+console.log(typeof(body));
 
 数据强制转换字符串
 
+toString(str); //强制转换字符串
+
 正则截取json内容
+
+var info = body.match(/\{.*\}/)[0];
 
 转换json格式
 
+var obj = JSON.parse(info);
+
+
 提取json内容 
 
+
+提取 score字段
+
+"score" : obj.score
 
 
 
