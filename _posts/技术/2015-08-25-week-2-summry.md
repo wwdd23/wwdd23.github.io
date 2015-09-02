@@ -1,7 +1,7 @@
 ---
 layout: post
 category : 技术
-title: "fishtrip两周技术点总结"
+title: "spider两周技术点总结"
 description: "周总结，记录学习工作内容"
 tagline: "技术就是生产力"
 tags : [技术,总结,nodjs,json,casperjs ]

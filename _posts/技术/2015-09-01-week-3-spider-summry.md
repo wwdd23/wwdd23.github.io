@@ -107,7 +107,7 @@ namespace :report do
           ]
   end
   //发送邮件并转为xls表格式
-  Emailer.send_custom_file(['wudi@fishtrip.cn'], '携程住宿地址抓取', XlsGen.gen(result), '携程住宿地址列表.xls', true).deliver
+  Emailer.send_custom_file(['your_email'], '携程住宿地址抓取', XlsGen.gen(result), '携程住宿地址列表.xls', true).deliver
 end
 
 
@@ -229,7 +229,7 @@ for lhs, rhs in itertools.izip(reader1, reader2):
 ```
 
 ##mongodb rails console常用命令
-*rails 线上服务器 w2.fishtrip.cn*
+*rails 线上服务器 w2.*
 
 ```
 $mongo_youspider['kancho'].find(:script_name => 'kancho/kancho_ctrip_address.js').first['data']
