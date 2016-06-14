@@ -22,7 +22,7 @@ $ sudo umount /dev/disk2s1
 创建一个空目录，再将设备挂载到这个目录，然后就可以随意操作移动硬盘了
 
 $ mkdir mnt
-$ sudo mount_ntfs -o rw,nobrowse /dev/disk2s1 aaa
+$ sudo mount_ntfs -o rw,nobrowse /dev/disk2s1 aaa/   #PS *挂载目录需要添加"/" ，若使用aaa 会产生 file error info  , 正确格式 "aaa/"*
 $ open aaa
 
 
