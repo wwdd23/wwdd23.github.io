@@ -1,7 +1,7 @@
 ---
 layout: post
 category : 技术
-title: "批量清楚git本地分支"
+title: "批量清除git本地分支"
 description: "批量清除本地git分支"
 tagline: "技术就是生产力"
 tags : [技术, 分享, OS, NTFS]
