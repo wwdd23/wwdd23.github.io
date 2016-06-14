@@ -9,7 +9,7 @@ tags : [技术, 分享, OS, NTFS]
 
 1. 如图 本地分支**如下 
  
-![step1](/images/data_remove_git_branch_1.png =300x)
+![step1](/images/data_remove_git_branch_1.png)
 
 可以看到有多中分值标签
 
@@ -21,7 +21,7 @@ feature / hotfix 等
 ``$git branch|grep 'feature'``
 
 查询的结果如下： 
-![step1](/images/data_remove_git_branch_2.png =300x)
+![step1](/images/data_remove_git_branch_2.png)
 
 
 3. 下面就用到了xargs 这一神命令了
@@ -30,12 +30,12 @@ feature / hotfix 等
 
 输出信息: 
 
-![step1](/images/data_remove_git_branch_3.png =300x)
+![step1](/images/data_remove_git_branch_3.png)
 
 
 这回我们看下git br 的结果
 
-![step4](/images/data_remove_git_branch_4.png =300x) 
+![step4](/images/data_remove_git_branch_4.png) 
 
 
 命令解析
