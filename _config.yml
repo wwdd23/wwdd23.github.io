@@ -1,50 +1,75 @@
-permalink: /:year/:month/:day/:title.html
-paginate: 10
-markdown: redcarpet
+# Site
+title:              Moon
+bio:                'Minimal, one column jekyll theme.'
+description:        "Moon is a minimal, one column jekyll theme for your blog."
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/logo.png'
+background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_US
+#url:                http://taylantatli.me/Moon
+url:                http://wwdd23.github.io
 
-# 作者信息
-author: 
-  name: 吴迪
-  email: programmerwudi@gmail.com
-  google_plus: https://plus.google.com/100949260652862828149/posts
-  linkedin: https://www.linkedin.com/pub/%E8%BF%AA-%E5%90%B4/ab/476/100
-  github: https://github.com/wwdd23
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
 
-# 站点信息
-title: About Me About U
-description: 个人笔记 技术分享
-url: http://wwdd23.gitblog.io
-rss_url: /pages/atom.xml
+# Comments
+disqus_shortname:   taylantatli
 
-# gavatar头像及Favicon
-gavatar: /images/blog-log.jpg
-favicon: /images/bike.png
+# Social
+# if you don't have any of social below, comment the line.
+#google:
+  #plus:            #username
+  #analytics:
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+#email:
+twitter:            username
+facebook:           username
+github:             username
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#linkedin:          username
+#xing:              username
+instagram:          username
+#lastfm:            username
+#tumblr:            username
+#pinterest:         username
+#foursquare:        username
+steam:              username
+#dribbble:          username
+#youtube:           username
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
 
-# google analytics 设置
-# ???看看是什么
-ga:
-  id:  
-  url: 
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
 
-# disqus 设置
-disqus:
-  shortname: wwdd23
+jekyll-mentions:
+    base_url: https://github.com
 
-# 主题设置，自动激活某个标签
-active: 生活
-
-# 首页除了最新文章外显示分类
-cates: 
-  - Linux
-  - bash
-
-# 中文本地化
-locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
-
-markdown: redcarpet
-redcarpet:
-    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
