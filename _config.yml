@@ -1,7 +1,7 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              W x Workshop 
+bio:                'Technology, Maker, Life.'
+description:        "Technology, Maker, Life."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
@@ -27,7 +27,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:  woodyworkshop 
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -38,23 +38,23 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github:             username
+email:              programmerwudi@gmail.com 
+#twitter:            username
+#facebook:           username
+github:             wwdd23 
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:          迪-吴-100476ab 
 #xing:              username
-instagram:          username
+instagram:          wudi908
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
 #foursquare:        username
-steam:              username
+steam:              wwdd23
 #dribbble:          username
 #youtube:           username
 #soundcloud:        username
-#weibo:             username
+weibo:             /u/2137428193
 #flickr:            username
 #codepen:           username
 #keybase:           username
