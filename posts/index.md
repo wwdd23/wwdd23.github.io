@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: All Posts
+title:  History Log
 excerpt: "A List of Posts"
 comments: false
 ---
