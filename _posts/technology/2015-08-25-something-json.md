@@ -4,13 +4,13 @@ category : 技术
 title: "json相关总结(乱序未整理)"
 description: "抓取过程中对json的操作"
 tagline: "技术就是生产力"
-tags : [技术,Linux,爬虫,javascript ]
+tags : [技术,Linux,爬虫,javascript]
 
 ---
 
-###json内容提取  js python 
+### json内容提取  js python 
  
-######js 读取 json方式
+###### js 读取 json方式
 
 ```
 url = [web api 接口地址]
@@ -59,7 +59,7 @@ jQuery501824([
 *json判断response.statusCode状态 是否为200*
 
 
-#####js api 内容整理
+##### js api 内容整理
 
 需要去除上文中jQuery501824\(\[ \]\)内容
 
@@ -75,7 +75,7 @@ var ss = body.replace(/\s+/g,"")
 
 整理后的字符串内容就可以开始转化为JSON格式进行解析.
 
-####整理接口信息流程
+#### 整理接口信息流程
 
 读入数据，
 

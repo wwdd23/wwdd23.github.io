@@ -7,7 +7,7 @@ tagline: "技术就是生产力"
 tags : [技术,OSX,Blog,docker,Ruby on Rails ]
 
 ---
-##项目环境搭建 For OSX
+## 项目环境搭建 For OSX
 
 
  
@@ -16,11 +16,11 @@ tags : [技术,OSX,Blog,docker,Ruby on Rails ]
 - mysql mysql2
 - mongodb install for OSX
 - Docker Configure
-- rails server start error ruby-1.9.3-p551/gems/railties-4.1.4/lib/rails/application/configuration.rb:105:in `database_configuration': Cannot load `Rails.application.database_configuration`: (RuntimeError)
+- rails server start error ruby-1.9.3-p551/gems/railties-4.1.4/lib/rails/application/configuration.rb:105:in `database_configuration`: Cannot load `Rails.application.database_configuration`: (RuntimeError)
 
 
 
-##Ruby Install For OSX
+## Ruby Install For OSX
 [Ruby 安装相关地址 https://ruby-china.org/wiki/install_ruby_guide](https://ruby-china.org/wiki/install_ruby_guide)
 
 1. 安装RVM
@@ -54,17 +54,17 @@ rvm 1.22.17 (stable) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <
 
 `$ gem install rails`
 
-###可能遇到error
+### 可能遇到error
 
 1. bundle install 时出现  libv8/therubyracer 安装错误
 
-####How to resolve libv8/therubyracer issue
+#### How to resolve libv8/therubyracer issue
 
 $ gem install libv8 -v '3.16.14.3' -- --with-system-v8
 
 $ bundle install
 
-#####zerror installing therubyracer
+##### zerror installing therubyracer
 
 $ gem uninstall libv8
 
@@ -74,14 +74,14 @@ $ gem install therubyracer
 
 $ bundle install
 
-####error installing libv8
+#### error installing libv8
 
 $ gem install libv8 -v '3.16.14.3' -- --with-system-v8
 
 
 Make sure that `gem install mysql2 -v '0.3.18'` succeeds before bundling.
 
-####error install mysql2
+#### error install mysql2
 
 实际上问题为缺少mysql相关文件
 
@@ -90,7 +90,7 @@ brew install mysql
 安装后即可生成 my.cfg文件
 
 
-###mysql mysql2 Install For Mac OSX
+### mysql mysql2 Install For Mac OSX
 
 只写如何安装过程:
 
@@ -127,7 +127,7 @@ OSX中启动mysql服务命令：
 `launchctl load -w ~/Library/LaunchAgents/ homebrew.mxcl.mysql.plist`
 
 
-##mongodb install for OSX
+## mongodb install for OSX
 
 命令行解析：
 
@@ -157,7 +157,7 @@ $ mongod 即可成功启动
 
 http://wesleytsai.io/2015/07/26/mongodb-server-directory-permission-denied/
 
-##Docker Configure
+## Docker Configure
 
 
 1.配置docker 环境需要以下工具依赖
@@ -167,11 +167,11 @@ http://wesleytsai.io/2015/07/26/mongodb-server-directory-permission-denied/
 
 2.配置环境：
 
-####下载 virtualbox 并安装
+#### 下载 virtualbox 并安装
 
 - 自行下载dmg文件安装
 
-####安装boot2dockeer
+#### 安装boot2dockeer
 
 使用brew安装boot2docker
 
@@ -199,7 +199,7 @@ $ docker ps -all
 
 $ docker inspect -f '{{.Id}}' 6bd42a04f130
 
-######主机向docker拷贝方法
+###### 主机向docker拷贝方法
 进入docker后
 
  $ cd /User/wudi   此目录为当前系统目录
@@ -211,7 +211,7 @@ d42a04f1302f24f7046803efb9acf5cff6ddcf4b298eff44274e555310efbf/   将文件拷�
 
  此时在docker当中的 / 目录就有一个read_json.py 文件了
  
-#####容器向主机拷贝方法
+##### 容器向主机拷贝方法
 
 $ docker ps -all  获取id
 
@@ -221,7 +221,7 @@ $ docker-enter id or docker start [id] -> docker attach [id] 登陆到容器中
 
 $ docker cp [id]:[docker中文件路径] [主机文件路径]
 
-####容器挂载主机目录方法
+#### 容器挂载主机目录方法
 
 `docker run -it -v /User/$USER/docker-share:/mnt dayuspider /bin/bash`
 
@@ -231,7 +231,7 @@ $ docker cp [id]:[docker中文件路径] [主机文件路径]
 
 ---
 
-#####```相关常用命令```
+##### ```相关常用命令```
 
 
 
@@ -247,11 +247,11 @@ $ xvfb-run casperjs --engine=slimerjs casper.js "http://hotel.qunar.com/city/osa
 
 
 
-##rails server start error
+## rails server start error
 
 安装rails后执行 rails s 启动服务可能会出现以下错误信息：
 	```
-	/Users/wudi/.rvm/gems/ruby-1.9.3-p551/gems/	railties-4.1.4/lib/rails/application/configuration.rb:105:in `database_configuration': Cannot 	load `Rails.application.database_configuration`: 	(RuntimeError)
+	/Users/wudi/.rvm/gems/ruby-1.9.3-p551/gems/	railties-4.1.4/lib/rails/application/configuration.rb:105:in `database_configuration`: Cannot 	load `Rails.application.database_configuration`: 	(RuntimeError)
 	``
 	
 进入/Users/$USER/dayu-spider/config
@@ -262,7 +262,7 @@ $ cp database.yml.sample database.yml
 
 之后即可正常运行
 	
-###spider环境内容
+### spider环境内容
 
 spider基于ubuntu构建 12.04 LTS
 

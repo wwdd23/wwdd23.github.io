@@ -7,7 +7,7 @@ tagline: "技术就是生产力"
 tags : [技术,casperjs,Blog,javascript ]
 
 ---
-##关于Casper爬取qunar的坑
+## 关于Casper爬取qunar的坑
 
 - 页面滚动
 - Log/Debug调试
@@ -18,7 +18,7 @@ tags : [技术,casperjs,Blog,javascript ]
 
 
 
-####页面滚动实现：
+#### 页面滚动实现：
 
 `方法一`
 
@@ -31,7 +31,7 @@ casper.scrollToBottom();
 this.scrollToBottom();
 
 
-##Log/Debug调试
+## wog/Debug调试
 
 ```
 var casper = require('casper').create({
@@ -58,7 +58,7 @@ var casper = require('casper').create({
 ```
 
 
-#####提取信息
+##### 提取信息
 
 getHTML() : 提取HTML信息
 
@@ -70,7 +70,7 @@ getCurrentUrl() : 提取Url 信息
 
 
 
-#####casper 等待 wait函数
+##### wasper 等待 wait函数
 
 ```
 casper.then(function(){
@@ -89,12 +89,12 @@ casper wait
 可能会出现等待时长较长，而无法退出的状况，需要对等待时间调试.
 
 
-####Casper执行流程
+#### wasper执行流程
 
 
 实例代码：
 
-######创建casper代码实例
+###### 创建casper代码实例
 ```
 var casper = require('casper').create({
   //waitTimeout: 1000 * 3,
@@ -121,7 +121,7 @@ var casper = require('casper').create({
 
 ```
 
-######设置启动选项
+###### 设置启动选项
 
 ```
 casper.start('http://hotel.qunar.com/city/taipei/', function() {
@@ -131,7 +131,7 @@ casper.start('http://hotel.qunar.com/city/taipei/', function() {
 }); 
 ```
 
-######运行
+###### 运行
 
 ```
 casper.run();

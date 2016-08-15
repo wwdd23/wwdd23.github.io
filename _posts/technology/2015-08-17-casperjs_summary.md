@@ -9,10 +9,10 @@ tags : [技术,javascript,casperjs ]
 ---
 
 
-##casperjs  webkit使用小结
+## casperjs  webkit使用小结
 
 
-######casperjs 滚动界面 api  
+###### casperjs 滚动界面 api  
 
 
 casper.scrollToBottom(); 
@@ -27,7 +27,7 @@ casper.scrollToBottom();
 此类界面，需要混动后才可以加载页面信息的问题
 ___
 
-#####casperjs 内置点击翻页的方法
+##### casperjs 内置点击翻页的方法
 
 解决类型：
 
@@ -41,7 +41,7 @@ casper.clickLabel(5,' a');
 
 ___
 
-#####js点击事件使用方法 
+##### js点击事件使用方法 
 
 `$('.more-agentinfo a').click();` //点击去哪儿网显示更多内容按钮
 
@@ -49,7 +49,7 @@ ___
 
 ____
 
-#####js setTimeout 使用
+##### js setTimeout 使用
 
 setTimeout(function(){
 
@@ -72,7 +72,7 @@ setTimeout(function(){
         },5000);
 ```
 
-#####casperjs wait使用
+##### casperjs wait使用
 
 casper.wait(timeout,function(){
 
@@ -89,9 +89,9 @@ casper.wait(3000, function() {
 ```
 ___
 
-####相关函数使用注意点
+#### 相关函数使用注意点
 
-#####casperjs step流程
+##### casperjs step流程
 
 ```
 (create casper)
