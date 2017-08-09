@@ -44,18 +44,24 @@ tags : [技巧,Linux,Vim, RoR]
 #### 如果你创建了错误modle 
 
 如果你需要创建  `rails g model order  country:string city_id:inter`
+
 结果不小心输入为  `rails g model order  country:string city_id:inte`
+
 只需要将g 替换为 d `rails d model order  country:string city_id:inte` 
+
 重新输入正常的命令即可
 
 
 #### 创建错误 model后还执行了 rake db:migrate 
 
 首先删除重建model信息
+
 回滚清除 db 信息,后重新创建db信息
 
 > rake db:drop
+
 > rake db:create
+
 > rake db:migrate
 
 
